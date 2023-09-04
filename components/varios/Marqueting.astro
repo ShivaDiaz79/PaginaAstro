@@ -1,0 +1,60 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title=""
+  subtitle=""
+  color="black"
+  id="marqueting"
+>
+  <!-- <div slot="footer" class="gap-x-6 flex mx-auto"> -->
+
+    <div slot="footer" class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 mx-2">
+      <div class="h-32 rounded-lg bg-gray-100">Redes Sociales</div>
+      <div class="h-32 rounded-lg bg-gray-100">Diseño </div>
+      <div class="h-32 rounded-lg bg-gray-100">Campañas de Ventas</div>
+    </div>
+    <!-- <a
+      class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
+      href="#"
+    >
+      Explorar inventario</a
+    > -->
+    <!-- <a
+      class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
+      href="#"
+    >
+      Pedido personalizado</a
+    > -->
+  <!-- </div> -->
+
+  <img
+    slot="background"
+    alt="Marqueting"
+    class="h-full w-full object-cover object-center bg-image"
+    src="marketing.avif"
+    id="bg-image-marketing"
+  />
+</Section>
+
+<script>
+  function isEdge() {
+    if (
+      navigator.userAgent.indexOf("Edge") > -1 ||
+      navigator.userAgent.indexOf("Edg") > -1
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  var imageElement = document.querySelector("#bg-image-marketing") as HTMLImageElement;
+
+  if (isEdge()) {
+    imageElement.src = "marketing.webp";
+  } else {
+    imageElement.src = "marketing.avif";
+  }
+</script>
