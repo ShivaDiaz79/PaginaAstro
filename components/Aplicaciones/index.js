@@ -26,20 +26,13 @@ function Index() {
     <div className="">
    
     
-      {/* <div className="">
-        <a
-          className="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
-          href="#"
-        >
-          Conócenos un poco más
-        </a>
-      </div> */}
+   
       <Section
         title="Aplicaciones"
         subtitle="Nativas"
         color="black"
         id="aplicaciones" // Asegúrate de que el id coincida con el de GridAnimations
-        imageSrc="/Img/aplicaciones.avif"
+        imageSrc="https://res.cloudinary.com/di1v23yy0/image/upload/v1693866193/aplicaciones_llr2qi.avif"
         alt="aplicaciones"
         height={600}
         width={800}

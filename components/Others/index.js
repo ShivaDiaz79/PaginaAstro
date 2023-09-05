@@ -27,7 +27,7 @@ function Index() {
       subtitle="Nativas"
       color="white"
       id="others"
-      imageSrc="/Img/others.avif"
+      imageSrc="https://res.cloudinary.com/di1v23yy0/image/upload/v1693866194/others_paiigj.avif"
       alt="Descripción de la imagen"
       height={600}
       width={800}

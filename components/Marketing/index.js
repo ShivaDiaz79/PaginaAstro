@@ -27,7 +27,7 @@ function Index() {
       subtitle="Nativas"
       color="black"
       id="marketing"
-      imageSrc="/Img/marketing.avif"
+      imageSrc="https://res.cloudinary.com/di1v23yy0/image/upload/v1693866194/marketing_ymm3mz.avif"
       alt="marketing"
       height={600}
       width={800}

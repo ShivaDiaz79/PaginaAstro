@@ -31,12 +31,12 @@ function Index() {
       subtitle="Nativas"
       color="white"
       id="animaciones"
-      // imageSrc="/Img/animaciones.avif"
-      // alt="animaciones"
-      // height={600}
-      // width={800}
-      // showFooterContent={true}
-      videoSrc="/Img/animaciones.webm" 
+      imageSrc="https://res.cloudinary.com/di1v23yy0/image/upload/v1693867614/animaciones_qdssl9.avif"
+      alt="animaciones"
+      height={600}
+      width={800}
+      showFooterContent={true}
+      // videoSrc="https://res.cloudinary.com/di1v23yy0/video/upload/v1693866207/animaciones_rpry6z.webm" 
     >
   
 

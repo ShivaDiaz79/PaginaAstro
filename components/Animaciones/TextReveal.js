@@ -41,7 +41,7 @@ function TextReveal() {
     return (
         <>
             <div className="spacing-small"></div>
-            <div className="reveal  bg-lime-3">
+            <div className="reveal ">
                 <div ref={triggerRef}>
                     {text.split("").map((letter, index) => (
                         <span className="reveal-text" key={index} ref={setlettersRef}>

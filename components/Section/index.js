@@ -59,7 +59,7 @@ const Section = ({ color, title, subtitle, id, showFooterContent, videoSrc, imag
 
       {videoSrc && (
         <div className="absolute top-0 bottom-0 h-full w-full z-10">
-          <video autoPlay muted loop className="h-full w-full object-cover object-center">
+          <video controls autoPlay muted loop className="h-full w-full object-cover object-center">
             <source src={videoSrc} type="video/webm" />
             Tu navegador no admite el elemento de video.
           </video>

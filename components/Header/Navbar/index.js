@@ -95,7 +95,7 @@ const Navbar = () => {
   return (
     <header id="landing-header" className=" py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white">
       <div className="flex flex-grow basis-0">
-        <Link href="./">
+        <Link href='/'>
           <Image src="/Img/blancowhite.png" alt="Logo"  width="100"  height="100" className="rounded-lg bg-gray-500 opacity-50 h-16 w-32" />
         </Link>
       </div>

@@ -27,7 +27,7 @@ function Index() {
       subtitle=""
       color="white"
       id="website" 
-      imageSrc="/Img/website.avif"
+      imageSrc="https://res.cloudinary.com/di1v23yy0/image/upload/v1693866193/website_oegwut.avif"
       alt="website"
       height={600}
       width={800}
