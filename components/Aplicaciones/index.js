@@ -29,7 +29,7 @@ function Index() {
    
       <Section
         title="Aplicaciones"
-        subtitle="Nativas"
+        subtitle="Nativas, Hibridas y Gestor de Contenido de Aplicaciones Móviles:"
         color="black"
         id="aplicaciones" // Asegúrate de que el id coincida con el de GridAnimations
         imageSrc="https://res.cloudinary.com/di1v23yy0/image/upload/v1693866193/aplicaciones_llr2qi.avif"

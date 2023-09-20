@@ -10,7 +10,7 @@ function ProductCard({ brand, title, rating, price, description }) {
             className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
             src="https://dummyimage.com/400x400"
           />
-          <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <div className="">
             <h2 className="text-sm title-font text-gray-500 tracking-widest">
               {brand}
             </h2>

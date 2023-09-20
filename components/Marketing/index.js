@@ -23,9 +23,9 @@ function Index() {
 
   return (
     <Section
-      title="marketing"
-      subtitle="Nativas"
-      color="black"
+      title="Marketing"
+      subtitle="Redes Sociales"
+      color="white"
       id="marketing"
       imageSrc="https://res.cloudinary.com/di1v23yy0/image/upload/v1693866194/marketing_ymm3mz.avif"
       alt="marketing"

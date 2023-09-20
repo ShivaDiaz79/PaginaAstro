@@ -28,7 +28,7 @@ function Index() {
 
     <Section
       title="Animaciones"
-      subtitle="Nativas"
+      subtitle="Desarrollo con Gsap, Framer Motion y Three"
       color="white"
       id="animaciones"
       imageSrc="https://res.cloudinary.com/di1v23yy0/image/upload/v1693867614/animaciones_qdssl9.avif"

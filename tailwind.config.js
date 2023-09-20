@@ -15,7 +15,16 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      animation: {
+        'bounce-slow': 'bounce 2s infinite', // Define una animación llamada 'bounce-slow' con una duración de 2 segundos.
+      },
+      fontSize: {
+        '14xl': '250px', // Ajusta el tamaño de fuente en píxeles para que sea aproximadamente equivalente a 14 centímetros en una pantalla estándar.
+      },
     },
   },
-  plugins: [],
+  plugins: [
+
+    require('flowbite-typography'),
+  ],
 }

@@ -2,8 +2,10 @@ import { useEffect } from 'react';
 import Image from 'next/image.js';
 import MenuMovil from '../MenuMovil.js';
 import Link from 'next/link.js';
+import { useRouter } from 'next/router.js';
 
 const Navbar = () => {
+  const router = useRouter(); // Obtén el router de Next.js
   useEffect(() => {
     const menuLinks = document.querySelectorAll("#mobile-menu a");
     const sections = document.querySelectorAll(".landing-section");
@@ -91,48 +93,66 @@ const Navbar = () => {
     const sectionElements = document.querySelectorAll(".landing-section");
     sectionElements.forEach((section) => observer.observe(section));
   }, []);
+  
 
   return (
-    <header id="landing-header" className=" py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white">
-      <div className="flex flex-grow basis-0">
-        <Link href='/'>
-          <Image src="/Img/blancowhite.png" alt="Logo"  width="100"  height="100" className="rounded-lg bg-gray-500 opacity-50 h-16 w-32" />
-        </Link>
-      </div>
+    <header id="landing-header" className="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white">
+    <div className="flex flex-grow basis-0">
+      <Link href='/'>
+        <Image src="/Img/blancowhite.png" alt="Logo" width="100" height="100" className="rounded-lg h-16 w-32" />
+      </Link>
+    </div>
 
-      <nav className="hidden xl:block sm:hidden">
+ {/* Mostrar el menú en tabletas y escritorios */}
+ <nav className="hidden sm:flex">
         <ul className="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-          <li><Link href="#aplicaciones">Aplicaciones</Link></li>
-          <li><Link href="#website">Web Site</Link></li>
-          <li><Link href="#webmaster">Web Master</Link></li>
-          <li><Link href="#marketing">Marketing</Link></li>
-          <li><Link href="#others">Others</Link></li>
-          <li><Link href="#animaciones">Animaciones - 3D</Link></li>
+          {/* Verifica si estás en la página principal o en otra página */}
+          {router.asPath === '/' ? ( // Si estás en la página principal
+            <>
+              <li><a href="#aplicaciones">Aplicaciones</a></li>
+              <li><a href="#website">Web Site</a></li>
+              <li><a href="#webmaster">Web Master</a></li>
+              <li><a href="#marketing">Marketing</a></li>
+              <li><a href="#others">Others</a></li>
+              <li><a href="#animaciones">Animaciones - 3D</a></li>
+              {/* Agrega aquí todas las pestañas que deseas mostrar en tabletas y escritorios */}
+            </>
+          ) : ( // Si estás en otra página
+            <>
+              <li><Link href="aplicaciones">Aplicaciones</Link></li>
+              <li><Link href="/#website">Web Site</Link></li>
+              <li><Link href="/#webmaster">Web Master</Link></li>
+              <li><Link href="/#marketing">Marketing</Link></li>
+              <li><Link href="/#others">Others</Link></li>
+              <li><Link href="/#animaciones">Animaciones - 3D</Link></li>
+              {/* Agrega aquí todas las pestañas que deseas mostrar en tabletas y escritorios */}
+            </>
+          )}
         </ul>
       </nav>
 
-      <nav className="flex flex-grow justify-end basis-0">
-        <ul className="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-          <li className="hidden xl:block sm:hidden"><Link href="cotiza">Cotiza</Link></li>
-          <li className="hidden xl:block sm:hidden"><Link href="contacto">Contacto</Link></li>
-          <li className="sm:hidden border border-emerald-50 z-50"><Link href="#" id="mobile-menu-toggle">Menú</Link></li>
-        </ul>
-      </nav>
+    <nav className="flex flex-grow justify-end basis-0">
+      <ul className="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+        <li className="hidden sm:flex"><Link href="cotiza">Cotiza</Link></li>
+        <li className="hidden sm:flex"><Link href="contacto">Contacto</Link></li>
+        <li className="sm:hidden border border-emerald-50 z-50"><Link href="#" id="mobile-menu-toggle">Menú</Link></li>
+      </ul>
+    </nav>
 
-      <MenuMovil/>
+    <MenuMovil />
 
-      <div
-        id="menu-backdrop"
-        className={`
-          absolute bg-black/5 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] backdrop-blur-lg rounded
-          translate-x-[var(--left)] translate-y-[var(--top)]
-          left-0 top-0
-          w-[var(--width)] h-[var(--height)]
-          transition-all duration-500
-          ease-in-out opacity-0 -z-10
-        `}
-      ></div>
-    </header>
+    <div
+      id="menu-backdrop"
+      className={`
+        absolute bg-black/5 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] backdrop-blur-lg rounded
+        translate-x-[var(--left)] translate-y-[var(--top)]
+        left-0 top-0
+        w-[var(--width)] h-[var(--height)]
+        transition-all duration-500
+        ease-in-out opacity-0 -z-10
+      `}
+    ></div>
+  </header>
   );
 };
 

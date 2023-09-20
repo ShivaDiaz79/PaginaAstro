@@ -23,12 +23,12 @@ function Index() {
 
   return (
     <Section
-      title="others"
-      subtitle="Nativas"
+      title="Otros"
+      subtitle="Servicios"
       color="white"
       id="others"
       imageSrc="https://res.cloudinary.com/di1v23yy0/image/upload/v1693866194/others_paiigj.avif"
-      alt="Descripción de la imagen"
+      alt="otros"
       height={600}
       width={800}
       classsName="h-full"

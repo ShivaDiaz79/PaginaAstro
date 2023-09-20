@@ -6,15 +6,27 @@ import Animaciones from "components/Animaciones";
 import Others from "components/Others";
 import Marketing from "components/Marketing";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "components/Layout";
 
+
+
+
+
+
+
 const Index = () => {
+
+
+
   return (
     <Layout>
       <main className=" snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
         <div className="snap-center">
           <HeroSection />
+        </div>
+        <div className="snap-center">
+          <Marketing />
         </div>
         <div className="snap-center">
           <Aplicaciones />
@@ -31,9 +43,7 @@ const Index = () => {
         <div className="snap-center">
           <Others />
         </div>
-        <div className="snap-center">
-          <Marketing />
-        </div>
+
         {/* <div>
       <FooterMenu/>
     </div> */}

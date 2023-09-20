@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import FooterMenu from 'components/FooterMenu';
+import GridHerosection from '../Grid/GridHerosection';
 import GridAplicaciones from 'components/Grid/GridAplicaciones';
 import GridMarketing from 'components/Grid/GridMarketing';
 import GridMaster from 'components/Grid/GridMaster';
@@ -14,6 +14,8 @@ const Section = ({ color, title, subtitle, id, showFooterContent, videoSrc, imag
 
   const renderGrid = () => {
     switch (id) {
+      case "herosection":
+        return <GridHerosection/>;
       case "website":
         return <GridWeb />;
       case "marketing":
@@ -26,6 +28,8 @@ const Section = ({ color, title, subtitle, id, showFooterContent, videoSrc, imag
         return <GridMaster />;
       case "animaciones":
         return <GridAnimations/>;
+
+       
       default:
         return null; // En caso de que el ID no coincida con ninguna sección conocida
     }
@@ -33,27 +37,27 @@ const Section = ({ color, title, subtitle, id, showFooterContent, videoSrc, imag
 
   return (
     <main
-      className={`landing-section min-h-screen w-screen text-center overflow-hidden relative `}
+      className={`landing-section min-h-screen w-screen text-center overflow-hidden relative pb-20 `}
       data-header-color={color}
       id={id}
     >
       <div className="z-30 relative h-full flex flex-col">
-        <header>
-          <h2 className={`${textColor} pt-28 text-[40px] font-medium`}>
+        <header className=''>
+          <h2 className={`${textColor} pt-28 text-[40px] font-medium  `}>
             {title}
           </h2>
-          <p className={`${textColor} text-sm hidden sm:block`}>
+          <p className={`${textColor} text-sm pb-10`}> 
             {subtitle}
           </p>
-        
+          {/* hidden sm:block */}
         </header>
         <header className=''>
         {renderGrid()}
         </header>
        
-        <footer className="flex flex-col flex-grow justify-end pb-20">
+        {/* <footer className="flex flex-col flex-grow justify-end pb-20">
           {showFooterContent && <FooterMenu />}
-        </footer>
+        </footer> */}
      
       </div>
 
@@ -61,7 +65,6 @@ const Section = ({ color, title, subtitle, id, showFooterContent, videoSrc, imag
         <div className="absolute top-0 bottom-0 h-full w-full z-10">
           <video controls autoPlay muted loop className="h-full w-full object-cover object-center">
             <source src={videoSrc} type="video/webm" />
-            Tu navegador no admite el elemento de video.
           </video>
         </div>
       )}

@@ -24,13 +24,14 @@ function Index() {
   return (
     <Section
       title="Web Site"
-      subtitle=""
-      color="white"
+      subtitle="Artesanos sin limites"
+      color="black"
       id="website" 
       imageSrc="https://res.cloudinary.com/di1v23yy0/image/upload/v1693866193/website_oegwut.avif"
       alt="website"
       height={600}
       width={800}
+      
     >
     
     

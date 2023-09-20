@@ -1,46 +1,68 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
-const items = [
-  'Animaciones JavaScript personalizadas:',
-  'Animaciones SVG:',
-  'Animaciones en 3D (usando Three.js):',
-  'Animaciones de carga y transiciones de página:',
-  'Animaciones para aplicaciones móviles',
-  'Animaciones de personajes y storytelling:',
-];
+const images = ["gsap1.avif", "cover.png", "three.jpg"]; // Agrega las imágenes aquí
 
 const GridAnimations = () => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+
+    const handleMouseMove = (event) => {
+      setCursorPosition({ x: event.clientX, y: event.clientY });
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  const rotateX = isClient ? (cursorPosition.y - window.innerHeight / 2) * -0.1 : 0;
+  const rotateY = isClient ? (cursorPosition.x - window.innerWidth / 2) * 0.1 : 0;
+
   return (
-  
-    <div className="container px-5 py-24 mx-auto z-10">
-    <div className="text-center mb-20"></div>
-    <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 hover:animate-background bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-      {items.map((item, index) => (
-        <div key={index} className="p-2 sm:w-1/2 w-full">
-          <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3"
-              className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-              viewBox="0 0 24 24"
-            >
-              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-              <path d="M22 4L12 14.01l-3-3"></path>
-            </svg>
-            <span className="title-font font-medium">{item}</span>
-          </div>
-        </div>
+    <Link href="/animaciones"> {/* Asegúrate de que la ruta sea correcta */}
+    <div className="flex flex-wrap justify-center items-center min-h-full">
+      {images.map((image, index) => (
+        <motion.div
+          key={index}
+          className="w-full md:w-1/3 p-4 relative"
+          style={{
+            perspective: "1000px",
+            transformStyle: "preserve-3d",
+            zIndex: images.length - index,
+            transform: `rotateY(${rotateY}deg) rotateX(${rotateX}deg) translateZ(40px)`,
+          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          {/* Agrega el enlace aquí */}
+         
+            
+              <motion.img
+                src={`/Img/${image}`}
+                alt={`Image ${index}`}
+                className=" h-40 w-40 sm:w-80 sm:h-80 rounded-full mx-auto"
+              />
+          
+        
+
+          <motion.h3
+            className="text-center text-white text-xl mt-2 absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity"
+          >
+            {/* Contenido opcional */}
+          </motion.h3>
+        </motion.div>
       ))}
     </div>
-    <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-      Y mucho más
-    </button>
-  </div>
-    
-  )
-}
+    </Link>
+  );
+};
 
-export default GridAnimations
+export default GridAnimations;
+
+

@@ -10,11 +10,11 @@ const Index = () => {
       title="Astro Estudio"
       subtitle="Agencia de Marketing y Desarrollo Web - Apps"
       color="white"
-      className="hidden"
-      imageSrc=" https://res.cloudinary.com/di1v23yy0/image/upload/v1693874177/hero_zuhgwe.avif"
-      alt="hero"
-      height={600}
-      width={800}
+      id="herosection"
+      imageSrc= "https://res.cloudinary.com/di1v23yy0/image/upload/v1693874177/hero_zuhgwe.avif"
+      alt="herosection"
+      height={900}
+      width={1200}
       >
       
     </Section>
