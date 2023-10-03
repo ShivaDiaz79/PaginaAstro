@@ -19,34 +19,19 @@ const SectionTablet = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-black body-font">
       <div className="mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-            Knausgaard typewriter readymade marfa
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
+            Sincronización Perfecta: Optimiza tu Presencia en Línea con la
+            Perfecta Fusión de CMS y Desarrollo Avanzado
           </h1>
           {renderStyledParagraph(
-            "Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid swag typewriter affogato, hella selvage wolf narwhal dreamcatcher.",
-            "text-sm mt-2 text-gray-500 w-full"
+            "En Astro Estudio, hemos perfeccionado la integración de los gestores de contenido líderes en la industria, incluyendo WordPress, Shopify, Wix y más. Este enfoque nos permite llevar tu presencia en línea al siguiente nivel, ofreciendo un rendimiento excepcional y una experiencia de usuario impecable. Nuestra oferta va más allá. Combinamos la potencia de los sistemas de gestión de contenido (CMS) con la flexibilidad y la innovación del desarrollo avanzado utilizando tecnologías líderes como React, Vue, Astro y Next.js. Esto significa que tu sitio web no solo se verá bien, sino que funcionará de manera excepcional en todas las plataformas.",
+            "text-sm mt-2 text-black w-full"
           )}
-          <div className="flex w-full md:justify-start justify-center items-end">
-            <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
-              <label
-                htmlFor="hero-field"
-                className="leading-7 text-sm text-gray-600"
-              >
-                Placeholder
-              </label>
-              <input
-                type="text"
-                id="hero-field"
-                name="hero-field"
-                className="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              Button
-            </button>
+          <div className="flex w-full md:justify-start justify-center items-end animate-pulse">
+            <h1>haz clic aquí ⬇️</h1>
           </div>
           <div className="flex lg:flex-row md:flex-col">
             <div className="w-full mt-4 border rounded border-gray-300 p-4">
@@ -54,29 +39,54 @@ const SectionTablet = () => {
                 onClick={toggleDescription}
                 className="text-indigo-500 cursor-pointer"
               >
-                Description
+                Flexibilidad y Escalabilidad:
               </p>
               {isDescriptionOpen && (
-                <p className="leading-relaxed mb-4">
-                  Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-                  sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo
-                  juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
-                  seitan poutine tumeric. Gastropub blue bottle austin listicle
-                  pour-over, neutra jean.
-                </p>
+                renderStyledParagraph(
+                  "La combinación de gestores de contenido y desarrollo nativo proporciona la flexibilidad necesaria para personalizar y escalar tu sitio web según las necesidades cambiantes de tu negocio. Puedes crear características únicas, integrar servicios externos y mantener un control total sobre el diseño y la funcionalidad. Esta flexibilidad es esencial para adaptarse a las demandas de un mercado en constante evolución y asegurar el crecimiento continuo de tu presencia en línea.",
+                  "leading-relaxed mb-4"
+                )
               )}
             </div>
             <div className="w-full mt-4 border rounded border-gray-300 p-4">
-              <p onClick={toggleReviews} className="text-indigo-500 cursor-pointer">
-                Reviews
+              <p
+                onClick={toggleReviews}
+                className="text-indigo-500 cursor-pointer"
+              >
+                Rendimiento Optimizado:
               </p>
               {isReviewsOpen && (
-                <p className="leading-relaxed mb-4">
-                  Reviews content goes here.
-                </p>
+                renderStyledParagraph(
+                  "La integración de un gestor de contenido con una plataforma de desarrollo nativo, como React o Next.js, optimiza el rendimiento de tu sitio web. Esto significa tiempos de carga más rápidos, lo que es crucial para retener a los visitantes y mejorar el SEO. Además, garantiza una experiencia de usuario fluida, lo que se traduce en tasas de conversión más altas y visitantes más satisfechos.",
+                  "leading-relaxed mb-4"
+                )
               )}
             </div>
           </div>
+          <h1 className="mx-auto text-2xl pt-4">¿Qué te ofrecemos?</h1>
+          {renderStyledParagraph(
+            "Desarrollo de Clase Mundial: Nuestro equipo de desarrolladores altamente experimentado utiliza las últimas tecnologías para crear sitios web y aplicaciones de alto rendimiento que superan tus expectativas.",
+            "mb-2"
+          )}
+          {renderStyledParagraph(
+            "Diseño a Medida: Cada proyecto es único, y así es como lo tratamos. Creamos diseños personalizados que representan tu marca y se destacan en la multitud.",
+            "mb-2"
+          )}
+          {renderStyledParagraph(
+            "Optimización para la Experiencia del Usuario: Nos enfocamos en la comodidad del usuario en cada paso. Desde la velocidad de carga hasta la navegación intuitiva, todo se diseña pensando en el usuario.",
+            "mb-2"
+          )}
+          {renderStyledParagraph(
+            "Mantenimiento Continuo: No te abandonamos después del lanzamiento. Ofrecemos servicios de mantenimiento y actualización para garantizar que tu sitio siempre esté a la vanguardia.",
+            "mb-2"
+          )}
+          {renderStyledParagraph(
+            "Resultados Comprobados: Nuestra cartera habla por sí misma. Hemos ayudado a innumerables empresas a tener éxito en línea, y estamos listos para hacer lo mismo por ti.",
+            "mb-2"
+          )}
+          <p>
+            ¿Estás listo para llevar tu presencia en línea al siguiente nivel? Contáctanos hoy y descubre cómo podemos impulsar tu éxito en la web con nuestra experiencia en la fusión de CMS y desarrollo avanzado.
+          </p>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <Tabletmockup />

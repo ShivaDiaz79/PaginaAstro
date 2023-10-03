@@ -21,6 +21,11 @@ module.exports = {
       fontSize: {
         '14xl': '250px', // Ajusta el tamaño de fuente en píxeles para que sea aproximadamente equivalente a 14 centímetros en una pantalla estándar.
       },
+      fontFamily: {
+        oswald: ['Oswald', 'sans-serif'], 
+         rubik: ['Rubik', 'sans-serif'],
+
+      },
     },
   },
   plugins: [

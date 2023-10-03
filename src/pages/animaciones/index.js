@@ -1,48 +1,73 @@
 import Layout from 'components/Layout'
 import Project from './components/Project'
+import FlagsSection from './components/FlagsSection'
+import Cube from './components/Cube'
+import AnimatedCard from './components/AnimatedCard'
+import AnimatedVideoComponent from './components/FlagsSection'
 
 
 const Animaciones = () => {
   const projects = [
     {
-      title1: "Jomor",
-      title2: "Design",
-      src: "jomor_design.jpeg"
+      title1: "Creamos",
+      title2: "Todo",
+      src: "jomor_design.avif"
     },
     {
-      title1: "La",
-      title2: "Grange",
-      src: "la_grange.jpeg"
+      title1: "Tipo",
+      title2: "De",
+      src: "la_grange.avif"
     },
     {
-      title1: "Deux Huit",
-      title2: "Huit",
-      src: "deux_huit_huit.jpeg"
+      title1: "Animaciones",
+      title2: "Que",
+      src: "deux_huit_huit.avif"
     },
     {
-      title1: "Nothing",
-      title2: "Design Studio",
-      src: "nothing_design_studio.png"
+      title1: "Puedas",
+      title2: "Llegar",
+      src: "nothing_design_studio.avif"
     },
     {
-      title1: "Mambo",
-      title2: "Mambo",
-      src: "mambo_mambo.jpeg"
+      title1: "A",
+      title2: "Imaginar",
+      src: "mambo_mambo.avif"
     }
   ]
 
   return (
     <Layout>
-    <main className="min-h-screen flex items-center justify-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 pt-20">
+      <div className='pt-24 px-3 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'> 
+    
+      <AnimatedCard 
+        title="Eleva tu Presencia con Animaciones Web de Vanguardia"
+        description="Entra en el mundo de la excelencia digital con nuestras animaciones web de última generación. Nuestros efectos visuales y transiciones cautivadoras transformarán tu sitio en una experiencia inmersiva única. Impulsa la retención de usuarios y la diferenciación de la competencia. Descubre el potencial ilimitado de tu presencia en línea con nuestras animaciones de élite."
+      />
+
+      </div>
+    <main className="sm:min-h-screen h-96 flex items-center justify-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 sm:pt-20">
       <div className="w-3/4">
-        <p className="text-2xl font-bold mb-4">Astro Estudio</p>
+
+      
+        <p className="text-2xl font-bold ">Astro Estudio</p>
         <div className="flex flex-wrap">
           {projects.map((project, index) => (
             <Project key={index} project={project} />
           ))}
         </div>
       </div>
+    
     </main>
+   <div className='bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'>
+   <Cube/>
+   <AnimatedVideoComponent
+  title="Título del Video"
+  description="Descripción del video animado con GSAP."
+  videoUrl="https://res.cloudinary.com/di1v23yy0/video/upload/v1693866198/video_bmbknn.webm" // Reemplaza con la URL de tu video
+/>
+
+   </div>
+   
     </Layout>
   )
 }

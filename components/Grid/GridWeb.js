@@ -3,7 +3,7 @@ import Link from "next/link";
 const GridItem = ({ href, imageSrc, title, isSecond }) => (
   <Link href={href}>
     <div
-      className={`h-40 w-40 sm:h-96 sm:w-96 rounded-full bg-gray-100 hover:animate-background bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] transform duration-300 ease-in-out hover:scale-150 relative ${
+      className={`h-40 w-40 sm:h-96 sm:w-96  font-oswald rounded-full bg-gray-100 hover:animate-background bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] transform duration-300 ease-in-out hover:scale-150 relative ${
         isSecond ? "mx-auto" : "sm:mx-0"
       }`}
     >
@@ -12,7 +12,7 @@ const GridItem = ({ href, imageSrc, title, isSecond }) => (
         src={imageSrc}
         alt=""
       />
-      <h2 className="text-center font-bold absolute inset-0 flex items-center justify-center text-white">
+      <h2 className="text-center font-oswald sm:text-2xl absolute inset-0 flex items-center justify-center text-white">
         {title}
       </h2>
     </div>

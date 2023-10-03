@@ -1,7 +1,7 @@
 import React from "react";
 
 const GridItem = ({ href, imageSrc, title, description }) => (
-  <div className="h-full bg-gray-100 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] transform duration-300 ease-in-out hover:scale-105 sm:hover:scale-150 sm:h-auto sm:w-full sm:rounded-lg">
+  <div className="h-full bg-gray-100 hover:animate-background font-oswald rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] transform duration-300 ease-in-out hover:scale-105 sm:hover:scale-150 sm:h-auto sm:w-full sm:rounded-lg">
     <a
       href={href}
       className="flex flex-col items-center sm:flex-row sm:max-w-xl"
@@ -12,10 +12,10 @@ const GridItem = ({ href, imageSrc, title, description }) => (
         alt=""
       />
       <div className="flex flex-col justify-between p-4 leading-normal">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">
+        <h5 className="mb-2 text-3xl font-bold tracking-tight text-black dark:text-white font-oswald">
           {title}
         </h5>
-        <p className="mb-3 font-normal text-black dark:text-gray-400">
+        <p className="mb-3 font-normal text-black dark:text-gray-400 font-rubik ">
           {description}
         </p>
       </div>

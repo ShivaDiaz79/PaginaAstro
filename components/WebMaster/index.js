@@ -24,7 +24,7 @@ function Index() {
   return (
     <Section
       title="Webmaster"
-      subtitle=""
+      subtitle="Estratega Digital"
       color="black"
       id="webmaster"
       imageSrc="/Img/webmaster.avif"

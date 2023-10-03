@@ -14,13 +14,11 @@ const index = () => {
      <SectionLapto/>
       <PriceWeb/>
       <SectionTablet/>
-  
       <PriceWeb/>
       <SectionDesktop/>
-
       <PriceWeb/>
-
-      </div></Layout>
+      </div>
+      </Layout>
   )
 }
 

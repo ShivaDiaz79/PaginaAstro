@@ -27,7 +27,8 @@ const SocialMedia = () => {
 
       Utilización de herramientas de análisis para medir el rendimiento de las publicaciones y la interacción del público.
       Ajuste de la estrategia en función de los datos recopilados para mejorar los resultados.
-      Paquete Plus:
+     
+     Paquete Plus:
 
       Publicidad en Redes Sociales:
 
@@ -41,6 +42,8 @@ const SocialMedia = () => {
 
       Implementación de estrategias orgánicas para aumentar el número de seguidores de manera sostenible.
       Fomento de la comunidad en línea y la participación de la audiencia a través de contenido atractivo.
+     
+     
       Paquete Personalizado:
 
       Investigación de Mercado y Competencia:

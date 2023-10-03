@@ -9,16 +9,7 @@ import Marketing from "components/Marketing";
 import React, { useEffect, useState } from "react";
 import Layout from "components/Layout";
 
-
-
-
-
-
-
 const Index = () => {
-
-
-
   return (
     <Layout>
       <main className=" snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">

@@ -29,7 +29,7 @@ const GridMaster = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mx-2 sm:ps-20 pt-20">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mx-2 font-oswald sm:ps-20 pt-20">
       {gridItems.map((item, index) => (
         <GridItem key={index} {...item} />
       ))}

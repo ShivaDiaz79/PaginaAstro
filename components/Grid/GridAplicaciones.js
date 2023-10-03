@@ -10,7 +10,7 @@ const items = [
 ];
 const GridAplicaciones = () => {
   return (
-    <div className="container px-5  mx-auto z-10">
+    <div className="container px-5  mx-auto font-oswald z-10">
     <div className="text-center mb-20"></div>
     <Link href="/aplicaciones">
     <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 hover:animate-background bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
@@ -35,7 +35,7 @@ const GridAplicaciones = () => {
       ))}
     </div>
     </Link>
-    <Link href="/aplicaciones" className=" mx-auto mt-16 text-black bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg inline-block">
+    <Link href="/aplicaciones" className=" font-oswald mx-auto mt-16 text-black bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg inline-block">
           Y mucho más
         
       </Link>

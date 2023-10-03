@@ -43,7 +43,7 @@ const Section = ({ color, title, subtitle, id, showFooterContent, videoSrc, imag
     >
       <div className="z-30 relative h-full flex flex-col">
         <header className=''>
-          <h2 className={`${textColor} pt-28 text-[40px] font-medium  `}>
+          <h2 className={`${textColor} pt-28 text-[40px] font-medium font-oswald `}>
             {title}
           </h2>
           <p className={`${textColor} text-sm pb-10`}> 

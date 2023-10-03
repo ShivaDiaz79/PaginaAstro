@@ -24,7 +24,7 @@ function Index() {
   return (
     <Section
       title="Marketing"
-      subtitle="Redes Sociales"
+      subtitle="Social Media"
       color="white"
       id="marketing"
       imageSrc="https://res.cloudinary.com/di1v23yy0/image/upload/v1693866194/marketing_ymm3mz.avif"

@@ -42,7 +42,7 @@ const PricingItem = ({ title, price, description, features }) => {
   );
 };
 
-const PriceMarketing = () => {
+const PriceCampaña = () => {
   const pricingItems = [
     {
       title: 'Freelancer',
@@ -99,4 +99,4 @@ const PriceMarketing = () => {
   );
 };
 
-export default PriceMarketing;
+export default PriceCampaña;

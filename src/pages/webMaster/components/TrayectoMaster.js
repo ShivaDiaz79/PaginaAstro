@@ -56,7 +56,7 @@ const renderIcon = (number) => {
 const TrayectoMaster = () => {
   return (
     <div>
-      <section className="text-gray-600 body-font">
+      <section className="text-black body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           {[1, 2, 3, 4].map(number => renderTrayectoItem(number, getTitle(number), getDescription(number)))}
         </div>

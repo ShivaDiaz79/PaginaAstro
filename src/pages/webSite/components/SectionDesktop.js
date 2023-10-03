@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
-import Laptopmockup from './Laptopmockup';
+import React, { useState } from "react";
+import Laptopmockup from "./Laptopmockup";
 
 const SectionDesktop = () => {
   const [content, setContent] = useState(null);
 
   const showContent1 = () => {
     setContent(
-      'Este es el contenido del primer párrafo que aparece al hacer clic en el primer botón.'
+      "WordPress: Potencia y Escalabilidad en tus Manos Con WordPress, llevamos tu presencia en línea al siguiente nivel. Aprovechamos el poder de esta plataforma de código abierto para desarrollar sitios web altamente funcionales y escalables. Ya sea un blog, un sitio corporativo o una plataforma de comercio electrónico, WordPress ofrece una base sólida para tus ambiciones en línea.."
     );
   };
 
   const showContent2 = () => {
     setContent(
-      'Este es el contenido del segundo párrafo que aparece al hacer clic en el segundo botón.'
+      "Wix: La Versatilidad Creativa en su Máxima Expresión Con Wix, transformamos tus ideas en un sitio web visualmente impresionante. Aprovechamos las herramientas de diseño intuitivas de Wix para crear páginas web personalizadas que cautivarán a tu audiencia. Desde blogs elegantes hasta tiendas en línea vibrantes, Wix ofrece la versatilidad que necesitas para destacar en línea."
     );
   };
 
   const showContent3 = () => {
     setContent(
-      'Este es el contenido del tercer párrafo que aparece al hacer clic en el tercer botón.'
+      "Shopify: Desarrollamos tu Pasaporte al Éxito en el Comercio Electrónico Con Shopify, convertimos tus sueños de comercio electrónico en realidad. Creamos tiendas en línea atractivas y efectivas que maximizan tus ventas en línea. Desde la configuración de productos hasta la gestión de pedidos y pagos seguros, Shopify brinda todo lo que necesitas para triunfar en el mundo del comercio electrónico.."
     );
   };
 
@@ -27,16 +27,18 @@ const SectionDesktop = () => {
       <div className="lg:max-w-lg lg:w-full md:w-5/6">
         <Laptopmockup />
       </div>
+
       <div className="mt-8">
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-          Before they sold out
-          <br className="hidden lg:inline-block" />readymade gluten
+          Creación de Sitios Web
+          <br className="hidden lg:inline-block" />
+          Impulsados por las Plataformas Más Poderosas
         </h1>
-        {content && (
-          <div className="border rounded-lg p-4 mb-4 leading-relaxed">
-            {content}
-          </div>
-        )}
+        <div className="flex w-full md:justify-start justify-center items-end animate-pulse">
+          <h1>haz clic aqui ⬇️</h1>
+        </div>
+    
+
         <div className="lg:text-center">
           <div className="flex flex-col lg:flex-row justify-center items-center">
             <button
@@ -60,9 +62,13 @@ const SectionDesktop = () => {
           </div>
         </div>
       </div>
+      {content && (
+          <div className="border rounded-lg p-4 mt-4 pb-5 leading-relaxed">
+            {content}
+          </div>
+        )}
     </div>
   );
 };
 
 export default SectionDesktop;
-

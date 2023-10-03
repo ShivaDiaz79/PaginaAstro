@@ -42,9 +42,9 @@ const MenuMovil = () => {
   return (
     <nav
     id="mobile-menu"
-    className="hidden xl:hidden lg:hidden  absolute top-24 bg-transparent text-white p-4 rounded shadow"
+    className="hidden xl:hidden lg:hidden font-oswald absolute text-xl top-24 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 text-white p-4 rounded shadow"
   >
-    <ul className="flex flex-col space-y-2">
+    <ul className="flex flex-col space-y-2 font-oswald ">
       {/* Verifica si estás en la página principal o en otra página */}
       {router.asPath === '/' ? ( // Si estás en la página principal
         <>
@@ -59,12 +59,12 @@ const MenuMovil = () => {
         </>
       ) : ( // Si estás en otra página
         <>
-          <li><Link href="/#aplicaciones">Aplicaciones</Link></li>
-          <li><Link href="/#website">Web Site</Link></li>
-          <li><Link href="/#webmaster">Web Master</Link></li>
-          <li><Link href="/#marketing">Marketing</Link></li>
-          <li><Link href="/#others">Others</Link></li>
-          <li><Link href="/#animaciones">Animaciones - 3D</Link></li>
+          <li><Link href="aplicaciones">Aplicaciones</Link></li>
+          <li><Link href="webSite">Web Site</Link></li>
+          <li><Link href="webMaster">Web Master</Link></li>
+          <li><Link href="marketing">Marketing</Link></li>
+          <li><Link href="others">Others</Link></li>
+          <li><Link href="animaciones">Animaciones - 3D</Link></li>
           <li className=""><Link href="/cotiza">Cotiza</Link></li>
           <li className=""><Link href="/contacto">Contacto</Link></li>
         </>

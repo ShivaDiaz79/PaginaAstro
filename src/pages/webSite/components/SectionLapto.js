@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import Desktopmockup from "./Desktopmockup";
 
 const SectionLapto = () => {
-  const [activeTab, setActiveTab] = useState("Description"); // Estado para rastrear la pestaña activa
+  const [activeTab, setActiveTab] = useState("React"); // Estado para rastrear la pestaña activa
 
-  const tabs = ["Description", "Reviews", "Details"];
+  const tabs = ["React", "Next", "Astro"];
 
   const content = {
-    Description: `Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean.`,
-    Reviews: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tempus quam, ac auctor nulla. Vivamus fringilla consectetur tortor, at convallis justo bibendum eu.`,
-    Details: `Suspendisse potenti. Vestibulum in urna vel justo hendrerit lacinia eget vel libero. Integer vitae mi quis tortor consectetur luctus. Nunc in dictum leo.`,
+    React: ` Interfaz de Usuario Dinámica e Interactiva:Interfaz Dinámica: React.js es el pilar detrás de las interfaces de usuario dinámicas e interactivas que cautivan a los usuarios.
+    Componentes Reutilizables: Aprovecha al máximo los componentes reutilizables para acelerar el desarrollo y mantener la coherencia visual.
+    Gestión Efectiva del Estado: Ofrece una gestión eficaz del estado, crucial para aplicaciones empresariales complejas.`,
+    Next: `Desarrollo Web Moderno a Otro Nivel: Enrutamiento Dinámico: Next.js potencia el enrutamiento dinámico y la representación en el lado del servidor (SSR) para una experiencia fluida.
+    Arquitectura Escalable: Escala sin problemas y construye aplicaciones web robustas sin comprometer el rendimiento.
+    Ecosistema de Desarrollo Completo: Aprovecha su ecosistema completo de herramientas y bibliotecas para un desarrollo eficiente..`,
+    Astro: `Eficiencia y Rendimiento Inigualables:Eficiencia Extrema: Astro revoluciona el desarrollo web al crear sitios ultrarrápidos y altamente eficientes.
+    Optimización de Rendimiento: Ofrece una optimización de rendimiento incomparable, lo que se traduce en tiempos de carga más rápidos y una experiencia del usuario excepcional.
+    Reducción de Costos: Reduce los costos operativos al minimizar la carga de trabajo del servidor y al mismo tiempo brinda una experiencia de usuario de primera clase..`,
   };
 
   // Función para cambiar la pestaña activa
@@ -20,25 +26,23 @@ const SectionLapto = () => {
   // Función para renderizar información
   const renderInfo = (label, value) => (
     <div className="flex border-t border-gray-200 py-2">
-      <span className="text-gray-500">{label}</span>
-      <span className="ml-auto text-gray-900">{value}</span>
+      <span className="text-black">{label}</span>
+      <span className="ml-auto text-black">{value}</span>
     </div>
   );
 
   // Función para renderizar cantidad
   const renderQuantity = (label, value) => (
     <div className="flex border-t border-b mb-6 border-gray-200 py-2">
-      <span className="text-gray-500">{label}</span>
-      <span className="ml-auto text-gray-900">{value}</span>
+      <span className="text-black">{label}</span>
+      <span className="ml-auto text-black">{value}</span>
     </div>
   );
 
   // Función para renderizar precio y botón
   const renderPriceButton = () => (
     <div className="flex">
-      <span className="title-font font-medium text-2xl text-gray-900">
-        $58.00
-      </span>
+   
       <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
         Button
       </button>
@@ -58,15 +62,15 @@ const SectionLapto = () => {
   );
 
   return (
-    <section className="text-gray-600 body-font overflow-hidden flex flex-col-1">
+    <section className="text-black body-font overflow-hidden flex flex-col-1">
       <div className="px-5 py-24 mx-auto flex flex-col-1">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-            <h2 className="text-sm title-font text-gray-500 tracking-widest">
-             titulo
+            <h2 className="text-sm title-font text-black tracking-widest">
+              Explorando el Futuro del Desarrollo Web
             </h2>
-            <h1 className="text-gray-900 text-3xl title-font font-medium mb-4">
-              Animated Night Hill Illustrations
+            <h1 className="text-black text-3xl title-font font-medium mb-4">
+              Líderes en Desarrollo Web: Explora Astro, React.js y Next.js
             </h1>
             <div className="flex mb-4">
               {tabs.map((tab) => (
@@ -85,9 +89,9 @@ const SectionLapto = () => {
             </div>
 
             <p className="leading-relaxed mb-4">{content[activeTab]}</p>
-            {renderInfo("Color", "Blue")}
-            {renderInfo("Size", "Medium")}
-            {renderQuantity("Quantity", "4")}
+            {renderInfo("React", "Popular")}
+            {renderInfo("Next", "Potente")}
+            {renderQuantity("Astro", "Rapido")}
             {renderPriceButton()}
           </div>
           <Desktopmockup />

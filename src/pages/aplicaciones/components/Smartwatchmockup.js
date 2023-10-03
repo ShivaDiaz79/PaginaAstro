@@ -2,7 +2,7 @@ import React from 'react'
 
 const Smartwatchmockup = () => {
   return (
-    <div className='pt-20 border border-red-800'>
+    <div className='py-10 border border-red-800'>
 
 
 

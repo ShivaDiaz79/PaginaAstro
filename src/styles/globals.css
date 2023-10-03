@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+  font-family: 'Oswald', sans-serif; /* Aplica Oswald a todos los elementos <h1> */
+}
+
+p {
+  font-family: 'Rubik', sans-serif; /* Aplica Rubik a todos los elementos <p> */
+}
 
 :root {
     --backgroundColor: #FFF;

@@ -105,7 +105,7 @@ const Navbar = () => {
 
  {/* Mostrar el menú en tabletas y escritorios */}
  <nav className="hidden sm:flex">
-        <ul className="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+        <ul className="flex text-xl font-oswald  [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 ">
           {/* Verifica si estás en la página principal o en otra página */}
           {router.asPath === '/' ? ( // Si estás en la página principal
             <>
@@ -120,20 +120,20 @@ const Navbar = () => {
           ) : ( // Si estás en otra página
             <>
               <li><Link href="aplicaciones">Aplicaciones</Link></li>
-              <li><Link href="/#website">Web Site</Link></li>
-              <li><Link href="/#webmaster">Web Master</Link></li>
-              <li><Link href="/#marketing">Marketing</Link></li>
-              <li><Link href="/#others">Others</Link></li>
-              <li><Link href="/#animaciones">Animaciones - 3D</Link></li>
+              <li><Link href="webSite">Web Site</Link></li>
+              <li><Link href="webMaster">Web Master</Link></li>
+              <li><Link href="marketing">Marketing</Link></li>
+              <li><Link href="others">Others</Link></li>
+              <li><Link href="animaciones">Animaciones - 3D</Link></li>
               {/* Agrega aquí todas las pestañas que deseas mostrar en tabletas y escritorios */}
             </>
           )}
         </ul>
       </nav>
 
-    <nav className="flex flex-grow justify-end basis-0">
-      <ul className="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-        <li className="hidden sm:flex"><Link href="cotiza">Cotiza</Link></li>
+    <nav className="flex flex-grow justify-end basis-0 ">
+      <ul className="flex text-xl font-oswald [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+        <li className="hidden sm:flex "><Link href="cotiza">Cotiza</Link></li>
         <li className="hidden sm:flex"><Link href="contacto">Contacto</Link></li>
         <li className="sm:hidden border border-emerald-50 z-50"><Link href="#" id="mobile-menu-toggle">Menú</Link></li>
       </ul>

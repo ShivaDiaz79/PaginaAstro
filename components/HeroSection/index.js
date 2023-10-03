@@ -8,7 +8,7 @@ const Index = () => {
     
     <Section
       title="Astro Estudio"
-      subtitle="Agencia de Marketing y Desarrollo Web - Apps"
+      subtitle="Agencia de Marketing y Desarrollo"
       color="white"
       id="herosection"
       imageSrc= "https://res.cloudinary.com/di1v23yy0/image/upload/v1693874177/hero_zuhgwe.avif"
