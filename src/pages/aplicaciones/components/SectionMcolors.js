@@ -53,7 +53,7 @@ const SectionMcolors = () => {
           key={tab}
           className={`flex-grow ${
             activeTab === tab
-              ? "text-indigo-500 border-b-2 border-indigo-500"
+              ? "text-white border-b-2 border-indigo-500"
               : "border-b-2 border-gray-300"
           } py-2 text-lg px-1`}
           onClick={() => handleTabClick(tab)}
@@ -66,13 +66,13 @@ const SectionMcolors = () => {
 
   return (
     <section className="text-blak body-font overflow-hidden flex flex-col lg:flex-row">
-      <Mockupcolors />
+      
       <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
         <div className="px-5 py-24 mx-auto">
           <h2 className="text-sm title-font text-black text-center tracking-widest">
             La Solución Versátil para Aplicaciones Móviles
           </h2>
-          <h1 className="text-black text-3xl title-font font-medium mb-4">
+          <h1 className="text-black text-3xl title-font text-center font-medium mb-4">
             Desarrollo de Aplicaciones Móviles Híbridas
           </h1>
           {renderTabs()}
@@ -83,6 +83,7 @@ const SectionMcolors = () => {
           {renderPriceButton()}
         </div>
       </div>
+      <Mockupcolors />
     </section>
   );
 };

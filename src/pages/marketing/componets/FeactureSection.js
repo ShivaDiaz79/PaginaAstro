@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const FeatureSection = () => {
   const features = [
@@ -54,19 +55,21 @@ const FeatureSection = () => {
 
             <div className="relative">
               <h1 className='text-center p-5 text-3xl '>ETAPAS DE CAMPAÑA</h1>
-              <img
-                className="object-cover object-center mx-auto rounded-lg shadow-2xl"
+              <Image
+                className="mt-5 object-cover object-center mx-auto rounded-lg shadow-2xl transform hover:scale-110 transition-transform duration-300 ease-in-out"
                 alt="hero"
                 src="https://res.cloudinary.com/di1v23yy0/image/upload/v1695496400/proceso-marketing-contenido-conceptual-comienza-idea-tema-escritura-diseno-recibe-comentarios-ilustrar_71983-916_ytmmo9.avif"
+                height={600}
+                width={600}
               />
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
+        <div className="flex flex-col items-start mt-7 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
           <dl className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {features.map((feature, index) => (
               <div key={index}>
-                <dt className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-600 rounded-full bg-blue-50">
+                {/* <dt className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-600 rounded-full bg-blue-50">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-6 h-6 icon icon-tabler icon-tabler-aperture"
@@ -115,15 +118,14 @@ const FeatureSection = () => {
                       transform="rotate(288 12 12)"
                     ></line>
                   </svg>
-                </dt>
+                </dt> */}
                 <dd className="flex-grow">
-                  <h2 className="mb-3 text-lg font-medium tracking-tighter text-black">
+                  <h2 className="mb-3 text-lg font-medium tracking-tighter text-center text-black">
                     {feature.title}
                   </h2>
-                  <p className="text-base leading-relaxed text-black">
+                  <p className="text-base leading-relaxed text-black bg-slate-400 p-4 rounded-xl transform hover:scale-110 transition-transform duration-300 ease-in-out">
                     {feature.description}
                   </p>
-                 
                 </dd>
               </div>
             ))}

@@ -5,7 +5,7 @@ const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
     <div className="absolute inset-x-0 transform translate-y-px -top-1">
       <div className="flex justify-center transform -translate-y-1/2 rounded-3xl">
         <span className="inline-flex px-4 py-1 text-sm font-bold tracking-wider uppercase bg-white border-8 border-blue-600 text-gray-800 rounded-xl">
-          Best Value
+         Servicios
         </span>
       </div>
     </div>

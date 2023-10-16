@@ -3,7 +3,7 @@ import React from "react";
 // Componente para un solo ítem en el grid de marketing
 const MarketingItem = ({ title, description, imageUrl }) => {
   return (
-    <div className="h-full bg-gray-100 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] transform duration-300 ease-in-out hover:scale-105 sm:hover:scale-150 sm:h-auto sm:w-full sm:rounded-lg">
+    <div className="h-full bg-gray-100 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] transform duration-300 ease-in-out hover:scale-105 sm:hover:scale-120 sm:h-auto sm:w-full sm:rounded-lg">
       <a href="marketing" className="flex flex-col items-center sm:flex-row sm:max-w-xl">
         <img
           className="object-cover w-full rounded-t-lg h-16 sm:h-60 sm:w-48 sm:rounded-none sm:rounded-l-lg"

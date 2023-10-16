@@ -37,20 +37,8 @@ const SectionRedes = () => {
 
   const renderItems = () =>
     items.map((item, index) => (
-      <div key={index} className="p-4 md:w-1/3 flex flex-col text-center items-center">
-        <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-          <svg
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            className="w-10 h-10"
-            viewBox="0 0 24 24"
-          >
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-          </svg>
-        </div>
+      <div key={index} className="p-4 md:w-1/3 flex flex-col  text-justify-between ">
+      
         <div className="flex-grow">
           {renderTitleAndDescription(item.title, item.description)}
         
@@ -59,11 +47,11 @@ const SectionRedes = () => {
     ));
 
   const renderTitleAndDescription = (title, description) => (
-    <div className=" ">
-      <h1 className="sm:text-2xl text-2xl font-medium title-font text-black mb-4">
+    <div className="mt-5">
+      <h1 className="sm:text-2xl text-2xl font-medium title-font text-center text-black mb-4  ">
         {title}
       </h1>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-black">
+      <p className="text-base mx-10 text-black bg-slate-400 p-5 rounded-2xl text-justify-between transform hover:scale-110 transition-transform duration-300 ease-in-out">
         {description}
       </p>
       <div className="flex mt-6 justify-center">
@@ -76,8 +64,9 @@ const SectionRedes = () => {
     <section className="text-black body-font">
       <div className=" px-5 py-24">
         <div className=" text-center ">
+          <h1 className='text-4xl'>DISEÑO GRAFICO - DISEÑO UX-UI</h1>
           {renderTitleAndDescription(
-            'Transforma tu Visión en Realidad: Diseño de Marca y Experiencia del Usuario',
+            'Transforma tu Visión en Realidad:',
             'En el mundo del marketing y la publicidad, sorprendentemente, un gran número de profesionales aún subestima la trascendental sinergia entre la construcción de una identidad de marca sólida y la experiencia del usuario (UX) y la interfaz de usuario (UI). La verdad es que fusionar estas disciplinas es esencial para forjar conexiones emocionales duraderas con el público objetivo y garantizar un impacto significativo en la percepción de una marca. En Astro Estudio, entendemos la importancia de una identidad de marca sólida. Nuestro enfoque es llevar tus ideas y visión a la vida, creando una marca única que resonará con tu audiencia.'
           )}
         </div>

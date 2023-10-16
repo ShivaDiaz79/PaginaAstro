@@ -8,6 +8,8 @@ import Marketing from "components/Marketing";
 
 import React, { useEffect, useState } from "react";
 import Layout from "components/Layout";
+import FooterMenu from "components/FooterMenu";
+
 
 const Index = () => {
   return (
@@ -35,10 +37,12 @@ const Index = () => {
           <Others />
         </div>
 
-        {/* <div>
-      <FooterMenu/>
-    </div> */}
+      
       </main>
+      <div className="">
+      <FooterMenu/>
+    </div>
+     
     </Layout>
   );
 };

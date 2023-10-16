@@ -29,7 +29,7 @@ const AnimatedVideoComponent = ({ title, description, videoUrl }) => {
       }}
     >
       <h2>{title}</h2>
-      <p>{description}</p>
+      <p className='mx-3'>{description}</p>
       <motion.div
         style={{
           width: '100%',
@@ -41,7 +41,7 @@ const AnimatedVideoComponent = ({ title, description, videoUrl }) => {
         }}
         whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
       >
-        <iframe
+        <video
           style={{
             position: 'absolute',
             top: '0',
@@ -55,9 +55,10 @@ const AnimatedVideoComponent = ({ title, description, videoUrl }) => {
           allowFullScreen
           autoPlay
           muted
-          playsInline
+          controls
+          loop
           ref={videoRef}
-        ></iframe>
+        ></video>
       </motion.div>
     </motion.div>
   );

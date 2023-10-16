@@ -11,8 +11,6 @@ const SectionMantenimiento = () => {
         <DescriptionMaster/>
         <TrayectoMaster/>
         <PriceInfo/>
-
-        
     </div>
   )
 }

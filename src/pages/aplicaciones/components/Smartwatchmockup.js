@@ -2,7 +2,7 @@ import React from 'react'
 
 const Smartwatchmockup = () => {
   return (
-    <div className='py-10 border border-red-800'>
+    <div className='py-10 transform hover:scale-150 transition-transform duration-300 ease-in-out'>
 
 
 
@@ -12,7 +12,7 @@ const Smartwatchmockup = () => {
     <div className="h-[41px] w-[6px] bg-gray-800 dark:bg-gray-800 absolute -right-[16px] top-[40px] rounded-r-lg"></div>
     <div className="h-[32px] w-[6px] bg-gray-800 dark:bg-gray-800 absolute -right-[16px] top-[88px] rounded-r-lg"></div>
     <div className="rounded-[2rem] overflow-hidden h-[193px] w-[188px]">
-        <img src="https://res.cloudinary.com/di1v23yy0/image/upload/v1694126938/interfaz-reloj-inteligente-futurista-representacion-3d-tecnologia-holografica-dispositivos-avanzados-perfecto-disenos-tecnologicos-ciencia-ficcion_561855-3233_b9xohh.avif" className="dark:hidden h-[193px] w-[188px" alt=""/>
+        <img src="https://res.cloudinary.com/di1v23yy0/image/upload/v1694126938/interfaz-reloj-inteligente-futurista-representacion-3d-tecnologia-holografica-dispositivos-avanzados-perfecto-disenos-tecnologicos-ciencia-ficcion_561855-3233_b9xohh.avif" className="transform hover:scale-150 transition-transform duration-300 ease-in-out dark:hidden h-[193px] w-[188px]" alt="reloj"/>
     
     </div>
 </div>

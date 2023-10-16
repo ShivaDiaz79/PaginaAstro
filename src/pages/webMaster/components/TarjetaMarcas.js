@@ -1,11 +1,14 @@
 import React from "react";
+import Image from "next/image";
 
 const Logo = ({ src, alt }) => (
   <div>
-    <img
-      className="h-4 mx-auto lg:h-12"
+    <Image
+      className="h-14 mx-auto lg:h-20"
       src={src}
       alt={alt}
+      height={200}
+      width={200}
     />
   </div>
 );
@@ -36,12 +39,12 @@ const TarjetaMarcas = () => {
 
   return (
     <div>
-      <section className="w-full bg-transparent dark:bg-wickeddark pt-28">
-        <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
+      <section className="w-full bg-transparent dark:bg-wickeddark pt-20">
+        <div className="relative items-center w-full px-5 py-8 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
           <div className="flex w-full mx-auto text-left">
             <div className="relative inline-flex items-center mx-auto align-middle">
               <div className="pb-12 text-center">
-                <h1 className="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-6xl lg:max-w-7xl">
+                <h1 className="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-black md:text-5xl lg:text-6xl lg:max-w-7xl">
                   Convierte a tus visitantes en usuarios
                 </h1>
               </div>

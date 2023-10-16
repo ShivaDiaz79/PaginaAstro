@@ -20,10 +20,10 @@ const SectionApps = () => {
   };
 
   return (
-    <section className="text-black body-font">
+    <section className="text-black body-font overflow-hidden sticky top-0">
       <div className="mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 text-center font-medium text-black">
+          <h1 className="title-font sm:text-3xl mx-auto text-3xl mb-4 text-center font-medium text-black">
             Desarrollo de Aplicaciones Móviles Nativas
           </h1>
           {renderStyledParagraph(
@@ -48,8 +48,7 @@ const SectionApps = () => {
                   de programación Swift, garantizando un rendimiento óptimo y
                   una experiencia de usuario excepcional en los dispositivos
                   iOS.<br/>
-                  
-                </p>
+                   </p>
               )}
             </div>
             <div className="w-full mt-4 border rounded border-red-700 p-4">
@@ -65,11 +64,10 @@ const SectionApps = () => {
                 </p>
               )}
             </div>
-           
           </div>
           <p className="leading-relaxed mb-4 text-xl pt-10">
             Ofrecemos servicios de desarrollo de aplicaciones móviles nativas de alta calidad que cumplen con los estándares más exigentes de la industria. Si estás listo para llevar tu idea o negocio al siguiente nivel con una aplicación móvil nativa, ¡contáctanos hoy mismo para obtener más información y una consulta gratuita!
-                </p>
+          </p>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <Smartwatchmockup />

@@ -30,7 +30,7 @@ const UxUiInfo = () => {
         {showInfo ? 'Ocultar información' : 'Mostrar información'}
       </button>
 
-      <div className={`info-container ${showInfo ? 'show' : ''}`}>
+      <div className={`info-container ${showInfo ? 'show' : ' bg-slate-400'}`}>
         <h3>UX (User Experience - Experiencia de Usuario):</h3>
         {renderParagraph(
           'La Experiencia de Usuario (UX) se refiere a la experiencia global que un usuario tiene al interactuar con un producto o servicio, como un sitio web, una aplicación móvil o incluso un producto físico. El objetivo principal de la UX es crear un diseño que sea intuitivo, eficiente y que satisfaga las necesidades y expectativas del usuario de manera positiva.'
@@ -76,7 +76,7 @@ const UxUiInfo = () => {
 
       <style jsx>{`
         .info-container {
-          background-color: #ffffff;
+          background-color:  #C0C0C0;
           border-radius: 12px;
           padding: 20px;
           margin-top: 20px;

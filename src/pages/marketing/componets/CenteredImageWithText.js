@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { gsap } from "gsap";
+import Image from "next/image";
 
 const CenteredImageWithText = () => {
   const [isFolded, setIsFolded] = useState(false);
@@ -23,21 +24,21 @@ const CenteredImageWithText = () => {
         <h2 className="text-2xl text-center font-semibold text-black">
           Tipos de Campañas que Ofrecemos
         </h2>
-        <p className="text-black mt-2 px-3">
-          Lanzamiento de Producto: Creamos campañas de alto impacto para
+        <p className="text-black mt-6 px-3 p-5 bg-slate-400 rounded-lg mx-3 transform hover:scale-110 transition-transform duration-300 ease-in-out">
+        <span className="text-white font-bold ">Lanzamiento de Producto:</span> Creamos campañas de alto impacto para
           presentar tus nuevos productos al mercado, generando anticipación y
           entusiasmo entre tu audiencia. <br />
-          Campañas de Promoción: Diseñamos estrategias promocionales efectivas
+          <span className="text-white font-bold ">Campañas de Promoción:</span> Diseñamos estrategias promocionales efectivas
           que aumentan las ventas y fidelizan a los clientes existentes.
           <br />
-          Campañas de Concientización: Creamos campañas de concienciación que
+          <span className="text-white font-bold ">Campañas de Concientización:</span> Creamos campañas de concienciación que
           educan a tu audiencia sobre los beneficios de tus productos o
           servicios, construyendo una base de clientes leales.
           <br />
-          Campañas de Temporada: Diseñamos estrategias estacionales que
+          <span className="text-white font-bold ">Campañas de Temporada: </span> Diseñamos estrategias estacionales que
           capitalizan eventos y festividades para impulsar las ventas.
           <br />
-          Campañas de Rebranding: Si estás relanzando tu marca, te ayudamos a
+          <span className="text-white font-bold ">Campañas de Rebranding: </span> Si estás relanzando tu marca, te ayudamos a
           crear una campaña que comunique eficazmente el nuevo enfoque y los
           valores de tu marca.
           <br />
@@ -46,41 +47,37 @@ const CenteredImageWithText = () => {
 
       {/* Columna Central con Imagen */}
       <div className="col-span-3 md:col-span-1 md:order-2">
-        <img
-          src="https://res.cloudinary.com/di1v23yy0/image/upload/v1696037304/megafono-dinero-volando-ai-aerogenerativo_391052-12604_i7dcyq.avif"
+        <Image
+          src="https://res.cloudinary.com/di1v23yy0/image/upload/v1696424693/misil_py1kzh.png"
           alt="Imagen en el Centro"
-          className={`w-full h-auto rounded-lg centered-image px-3 ${
+          width={300}
+          height={400}
+          className={`w-full h-auto rounded-lg centered-image px-3  ${
             isFolded ? "folded" : ""
           }`}
         />
-        <p className="pt-20 px-3">
-          En Astro Estudio, no solo lanzamos campañas, creamos historias de
-          éxito. Estamos listos para llevar tu producto o servicio al siguiente
-          nivel en el mercado. Contáctanos hoy mismo y descubre cómo podemos
-          ayudarte a alcanzar tus metas de campaña.
-        </p>
       </div>
 
       {/* Columna Derecha - En dispositivos móviles, aparecerá después de la imagen */}
       <div className="col-span-3 md:col-span-1 md:order-3">
         <h2 className="text-2xl font-semibold text-gray-800 text-center">
-          ¿Por qué elegir Astro Estudio para tus Campañas?
+          ¿Por qué elegir Astro Group?
         </h2>
-        <p className="text-black mt-2 px-3">
-          Experiencia en la Industria: Con años de experiencia en la gestión de
+        <p className="text-black mt-6 px-3 p-5 bg-slate-400 rounded-lg mx-3 transform hover:scale-110 transition-transform duration-300 ease-in-out">
+        <span className="text-white font-bold ">Experiencia en la Industria:</span> Con años de experiencia en la gestión de
           campañas, comprendemos las complejidades de diferentes industrias.{" "}
           <br />
-          Creatividad y Estrategia: Nuestro equipo combina creatividad con
+          <span className="text-white font-bold ">Creatividad y Estrategia:</span> Nuestro equipo combina creatividad con
           estrategia, lo que garantiza campañas efectivas y atractivas.
           <br />
-          Resultados Comprobados: Nuestra cartera muestra una serie de campañas
+          <span className="text-white font-bold ">Resultados Comprobados: </span> Nuestra cartera muestra una serie de campañas
           exitosas que han llevado al éxito a empresas de todos los tamaños.
           <br />
-          Enfoque Centrado en el Cliente: Trabajamos en estrecha colaboración
+          <span className="text-white font-bold ">Enfoque Centrado en el Cliente: </span> Trabajamos en estrecha colaboración
           contigo para garantizar que tus objetivos comerciales sean nuestra
           principal prioridad.
           <br />
-          Medición y Optimización: Utilizamos datos y análisis para optimizar
+          <span className="text-white font-bold ">Medición y Optimización:</span>  Utilizamos datos y análisis para optimizar
           constantemente tus campañas y maximizar el retorno de la inversión
           <br />
         </p>

@@ -32,7 +32,7 @@ const SectionDiseño = () => {
 
   const renderPriceButton = () => (
     <div className="flex">
-      <span className="title-font font-medium text-xl text-gray-900 font-rubik">
+      <span className="title-font font-medium text-lg text-gray-900 font-rubik">
         Nuestros servicios de gestión de redes sociales no se limitan a la publicación de contenido; se trata de crear una presencia en línea sólida y efectiva que construya relaciones genuinas con tu audiencia y genere resultados cuantificables para tu empresa. Deja que nuestra experiencia y pasión por el marketing en redes sociales impulsen el crecimiento de tu marca en el mundo digital.
       </span>
     </div>
@@ -62,7 +62,7 @@ const SectionDiseño = () => {
   return (
     <section className="text-black body-font overflow-hidden flex flex-col-1 font-oswald">
       <div className="px-5 py-24 mx-auto flex flex-col-1">
-        <div className="lg:w-4/5 mx-auto flex flex-wrap">
+        <div className="lg:w-5/5 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
             <h2 className="text-sm text-center title-font text-black tracking-widest font-oswald">
               Maximiza tu Presencia en Línea y Conecta con tu Audiencia 
@@ -71,6 +71,7 @@ const SectionDiseño = () => {
               Gestión de Redes Sociales: La Diferencia que
               Necesitas
             </h1>
+            {renderPriceButton()}
             <div className="flex mb-4">
               {tabs.map((tab) => (
                 <a
@@ -86,6 +87,7 @@ const SectionDiseño = () => {
                 </a>
               ))}
             </div>
+         
 
             <p className="leading-relaxed mb-4">
               <span className="font-semibold  font-oswald">Descripcion:</span>{" "}
@@ -100,12 +102,12 @@ const SectionDiseño = () => {
               "Tik Tok--->",
               "Más de 2 mil millones usuarios activos."
             )}
-            {renderPriceButton()}
+           
           </div>
           <img
-            alt="ecommerce"
-            className="featured-image lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-            src="https://res.cloudinary.com/di1v23yy0/image/upload/v1695830738/concepto-creativo-marketing-digital-redes-sociales-ilustracion-3d-gesto-mano-colorido_85867-1246_qpub7r.avif"
+            alt="redes"
+            className="featured-image lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded rounded-3xl sm:rounded-full"
+            src="https://res.cloudinary.com/di1v23yy0/image/upload/v1696923504/redeseditada_xidzxw.png"
           />
         </div>
       </div>

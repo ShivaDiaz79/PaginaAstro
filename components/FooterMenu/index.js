@@ -1,6 +1,7 @@
 import React from 'react'
+import Link from 'next/link'
 
-const Index = () => {
+const FooterMenu = () => {
   return (
     <div>
         <footer
@@ -9,12 +10,12 @@ const Index = () => {
 >
 	<nav>
 		<ul className="flex [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2">
-			<li><a href="#">Astro Estudio © 2023</a></li>
-			<li><a href="#">Privacidad y legal</a></li>
-			<li><a href="#">Contacto</a></li>
-			<li><a href="#">Noticias</a></li>
-			<li><a href="#">Seguir informado</a></li>
-			<li><a href="#">Localización de tiendas</a></li>
+			<li><Link href="#">Astro Estudio © 2023</Link></li>
+			<li><Link href="/privacidadLegal">Privacidad y legal</Link></li>
+			<li><Link href="/contacto">Contacto</Link></li>
+			<li><Link href="/cotiza">Cotizaciones</Link></li>
+			{/* <li><Link href="#">Seguir informado</Link></li>
+			<li><Link href="/contacto">Localización de tiendas</Link></li> */}
 		</ul>
 	</nav>
 </footer>
@@ -22,4 +23,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default FooterMenu

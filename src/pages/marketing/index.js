@@ -17,11 +17,9 @@ const index = () => {
         <SectionDiseño/>
         <PriceMarketing/>
         <SectionRedes />
-        <SectionCampaña/>     
-        <PriceDiseño/>
+        <SectionCampaña/>
         <CenteredImageWithText/>
         <FeatureSection/>
-        <PriceCampaña/>
       </div>
     </Layout>
   );

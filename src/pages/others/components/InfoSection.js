@@ -77,7 +77,7 @@ function InfoSection() {
           </div>
           <img
             className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-            src="https://res.cloudinary.com/di1v23yy0/image/upload/v1695527740/reproductor-youtube-dispositivo-diseno-plano_23-2147844063_f3p9dn.avif"
+            src="https://res.cloudinary.com/di1v23yy0/image/upload/v1696469643/YOUTUBE-editada_gjwybh.png"
             alt="youtube"
           />
         </div>
