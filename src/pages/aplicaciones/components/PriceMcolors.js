@@ -5,7 +5,7 @@ const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
     <div className="absolute inset-x-0 transform translate-y-px -top-1">
       <div className="flex justify-center transform -translate-y-1/2 rounded-3xl">
         <span className="inline-flex px-4 py-1 text-sm font-bold tracking-wider uppercase bg-white border-8 border-blue-600 text-gray-800 rounded-xl">
-          Best Value
+          APLICACIONES
         </span>
       </div>
     </div>
@@ -32,7 +32,7 @@ const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
         href={link}
         className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"
       >
-        Buy for {price}
+        CONTRATAR {price}
       </a>
     </div>
   </div>
@@ -41,41 +41,80 @@ const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
 const PriceApps = () => {
   const priceCards = [
     {
-      price: '$107',
-      discount: '$179',
-      title: 'Teams',
+      price: '$10.000',
+      discount: '',
+      title: 'NATIVAS',
       features: [
-        '15 Templates + releases',
-        'UI Kits',
-        'HTML & Next.js',
-        'Figma files',
-        'Flexible license',
-        'Priority Support',
+        '✔️ Diseño de interfaz de usuario personalizado y atractivo.',
+        '✔️ Acceso a características específicas del sistema operativo (sensores, notificaciones, etc.).',
+        '✔️ Integración con servicios de geolocalización y mapas.',
+        '✔️ Alto rendimiento y velocidad.',
+        '✔️ Funciones de seguridad avanzada y cifrado de datos.',
+        '✔️ Compatibilidad con múltiples dispositivos y pantallas.',
+        '✔️ Integración de funciones de pago y compras dentro de la aplicación.',
+        '✔️ Notificaciones push avanzadas y en tiempo real.',
+        '✔️ Uso de diseño nativo para iOS y Android.',
+        '✔️ Entrega en un plazo específico.',
+        '✔️ Código fuente de la aplicación.',
+        '✔️ Soporte técnico post-lanzamiento.',
+        '✔️ Personalización de iconos de la aplicación.',
+        '✔️ Pruebas exhaustivas y resolución de problemas.',
+        '✔️ Optimización de rendimiento para una experiencia fluida.',
       ],
       link: 'https://wicked-templates.gumroad.com/l/wicked-team-tier/40dark',
       bgClass: 'bg-blue-600 rounded-3xl',
     },
     {
-      price: '$53',
-      discount: '$89',
-      title: 'Freelancer',
+      price: ' CONSULTE',
+      discount: '',
+      title: 'HIBRIDAS',
       features: [
-        '14 Templates + releases',
-        'HTML & Next.js',
-        'Figma files',
-        'Flexible license',
+        '✔️ Desarrollo con una única base de código para iOS y Android.',
+        '✔️ Implementación rápida y costos de desarrollo más bajos.',
+        '✔️ Mantenimiento de una única base de código.',
+        '✔️ Uso de tecnologías web estándar (JavaScript).',
+        '✔️ Diseño responsivo para adaptarse a diversas pantallas.',
+        '✔️ Integración con servicios web y en la nube.',
+        '✔️ Actualizaciones de la aplicación sin aprobación de tiendas de aplicaciones.',
+        '✔️ Notificaciones push a través de servicios de terceros.',
+        '✔️ Compatibilidad con múltiples sistemas operativos (iOS y Android).',
+        '✔️ Entrega en un plazo específico.',
+        '✔️ Código fuente de la aplicación.',
+        '✔️ Soporte técnico post-lanzamiento.',
+        '✔️ Diseño de interfaz de usuario adaptable.',
+        '✔️ Pruebas exhaustivas y resolución de problemas.',
+        '✔️ Optimización de rendimiento para una experiencia fluida.',
       ],
       link: 'https://wicked-templates.gumroad.com/l/wicked-dev-tier/40dark',
       bgClass: 'bg-blue-600 rounded-3xl',
     },
     {
-      price: '$29',
-      discount: '$49',
-      title: 'Hobby',
+      price: '$3999',
+      discount: '',
+      title: 'CONSTRUCTOR APP',
       features: [
-        '14 Templates + releases',
-        'HTML & Next.js',
-        'Flexible license',
+        'Aplicaciones Móviles Básicas:',
+        '✔️ Diseño de interfaz de usuario atractivo.',
+        '✔️ Personalización de colores y logotipos de la marca.',
+        '✔️ Integración de contenido multimedia, como imágenes y videos.',
+        '✔️ Notificaciones push para mantener a los usuarios informados.',
+        '✔️ Formularios de contacto y retroalimentación.',
+        '✔️ Integración de redes sociales para compartir contenido.',
+        '✔️ Catálogo de productos o servicios.',
+        '✔️ Función de búsqueda para facilitar la navegación.',
+        '✔️ Información de contacto y ubicación.',
+        '✔️ Enlaces a sitios web y redes sociales.',
+        'Características Avanzadas de Aplicaciones Móviles:',
+        '✔️ Integración con API de terceros para servicios específicos, como mapas o reservas.',
+        '✔️ Formularios interactivos para recopilar datos de usuarios.',
+        '✔️ Creación de cuentas de usuario y perfiles personalizados.',
+        '✔️ Galería de imágenes o cartera de proyectos.',
+        '✔️ Acceso a contenido exclusivo o restringido para usuarios registrados.',
+        '✔️ Integración con sistemas de análisis y estadísticas.',
+        '✔️ Chat en vivo o soporte de mensajería para atención al cliente.',
+        '✔️ Calendario de eventos o reservas en línea.',
+        '✔️ Sistema de comentarios o reseñas.',
+        '✔️ Integración con sistemas de gestión de contenido (CMS).',
       ],
       link: 'https://wicked-templates.gumroad.com/l/starter-tier/40dark',
       bgClass: 'bg-blue-600 rounded-3xl',

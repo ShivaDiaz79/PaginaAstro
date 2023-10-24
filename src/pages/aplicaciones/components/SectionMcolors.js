@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Mockupcolors from "./Mockupcolors";
+import Fonts3 from "../../../../components/Fonts3";
 
 const SectionMcolors = () => {
   const [activeTab, setActiveTab] = useState("Compatibilidad"); // Estado para rastrear la pestaña activa
@@ -36,7 +37,7 @@ const SectionMcolors = () => {
   // Función para renderizar precio y botón
   const renderPriceButton = () => (
     <div className="flex">
-      <span className="title-font font-rubik text-xl text-black">
+      <span className="title-font font-rubik text-base text-black">
         Estas características destacan la versatilidad y las ventajas del desarrollo de aplicaciones móviles híbridas, que pueden ser una excelente opción dependiendo de los objetivos y requisitos específicos de tu proyecto.<br/>
         React Native es ampliamente reconocido y utilizado para el desarrollo de aplicaciones móviles híbridas. Es respaldado por Facebook y tiene una gran comunidad de desarrolladores. Permite la creación de aplicaciones para iOS y Android utilizando componentes de interfaz de usuario reutilizables y un solo código base escrito en JavaScript.<br/>
         Flutter, respaldado por Google, es otro marco popular para el desarrollo de aplicaciones móviles híbridas. Utiliza el lenguaje de programación Dart y ofrece un rendimiento de alta velocidad y una experiencia de usuario suave. Flutter ha ganado tracción en la comunidad de desarrollo y sigue creciendo en popularidad.<br/>
@@ -65,9 +66,10 @@ const SectionMcolors = () => {
   );
 
   return (
-    <section className="text-blak body-font overflow-hidden flex flex-col lg:flex-row">
+    <section className="text-black sm:mx-28 body-font overflow-hidden flex flex-col lg:flex-row">
       
       <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+        
         <div className="px-5 py-24 mx-auto">
           <h2 className="text-sm title-font text-black text-center tracking-widest">
             La Solución Versátil para Aplicaciones Móviles
@@ -75,15 +77,16 @@ const SectionMcolors = () => {
           <h1 className="text-black text-3xl title-font text-center font-medium mb-4">
             Desarrollo de Aplicaciones Móviles Híbridas
           </h1>
+          {renderPriceButton()}
           {renderTabs()}
           <p className="leading-relaxed mb-4">{content[activeTab]}</p>
           {renderInfo("React Native:", "Puntuación en el ranking: Muy alta")}
           {renderInfo("Flutter (Dart):", "Puntuación en el ranking: En constante crecimiento")}
           {renderQuantity("Xamarin (C#):", "Puntuación en el ranking: Sólida")}
-          {renderPriceButton()}
+          
         </div>
       </div>
-      <Mockupcolors />
+    <Fonts3/>
     </section>
   );
 };

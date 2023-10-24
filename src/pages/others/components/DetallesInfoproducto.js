@@ -1,4 +1,6 @@
-import React from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const DetallesInfoproducto = () => {
   const productos = [
@@ -60,22 +62,47 @@ const DetallesInfoproducto = () => {
         subtitle: 'PLANIFICACION',
       },
   ];
+  const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % productos.length);
+    }, 10000); // Cambia cada 10 segundos
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentIndex, productos]);
+  
   return (
     <section className="text-black body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-black">{productos[0].title}</h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">{productos[0].description}</p>
+      <div className="container px-5 py-24 mx-auto rounded-3xl">
+        <div className="flex flex-col text-center w-full mb-20 ">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-black">
+            {productos[currentIndex].title}
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            {productos[currentIndex].description}
+          </p>
         </div>
         <div className="flex flex-wrap -m-4">
           {productos.map((producto, index) => (
             <div key={index} className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={producto.image} />
+              <div className="flex relative rounded-3xl">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full rounded-3xl"
+                  src={producto.image}
+                  width={700}
+                  height={500}
+                />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">{producto.subtitle}</h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{producto.title}</h1>
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    {producto.subtitle}
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    {producto.title}
+                  </h1>
                   <p className="leading-relaxed">{producto.description}</p>
                 </div>
               </div>
@@ -88,4 +115,10 @@ const DetallesInfoproducto = () => {
 };
 
 export default DetallesInfoproducto;
+
+
+
+
+
+
 

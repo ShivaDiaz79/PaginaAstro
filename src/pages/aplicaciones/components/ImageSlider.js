@@ -43,16 +43,16 @@ const ImageSlider = () => {
   const isEven = currentImage % 2 === 0;
 
   return (
-    <div className="flex flex-col md:flex-row items-center mb-4 md:mb-0 border border-purple-600 md:h-96">
+    <div className="flex flex-col md:flex-row items-center mb-4 md:mb-0  md:h-96">
       <div className={`md:w-1/2 p-4 ${isEven ? 'order-2' : 'order-1'}`}>
         <img
           src={images[currentImage].src}
           alt={images[currentImage].title}
-          className="w-full h-96 object-cover md:full"
+          className="w-full h-96 object-cover md:full rounded-3xl"
         />
       </div>
       <div className={`md:w-1/2 p-4 ${isEven ? 'order-1' : 'order-2'}`}>
-        <h2 className="text-3xl text-center text-black font-semibold mb-2">
+        <h2 className="text-3xl text-center text-black font-semibold mb-2 font-rubik">
           {images[currentImage].title}
         </h2>
         <p className="text-black">{images[currentImage].text}</p>

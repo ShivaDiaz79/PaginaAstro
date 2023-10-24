@@ -1,4 +1,5 @@
 import React from "react";
+import YouTubeInfo from "./YoutubeInfo";
 
 function FeatureLink({ text }) {
   return (
@@ -83,47 +84,8 @@ const FeatureSection = () => {
   return (
     <section className="text-black body-font">
       <div className="container px-5 py-24 mx-auto">
-        <div className=" mb-20">
-          <h1 className="sm:text-3xl text-2xl font-medium  title-font text-black mb-4">
-            Soluciones Profesionales para Maximizar tu Presencia en YouTube
-          </h1>
-          <p className="">
-            ¿Quieres llevar la presencia de tu empresa al siguiente nivel en la
-            plataforma de video más grande del mundo? ¡Estás en el lugar
-            adecuado! En [Tu Nombre de Agencia], estamos especializados en la
-            creación y administración de contenido de YouTube que no solo
-            atraerá a tu audiencia, sino que también te ayudará a obtener
-            ingresos significativos a través del programa de monetización de
-            YouTube.
-          </p>
-          <h2>Generación de Contenido de Valo</h2>
-          <p>
-            Nuestro equipo de creadores de contenido está dedicado a producir
-            videos de alta calidad que capten la atención de tu público
-            objetivo. Ya sea a través de tutoriales, reseñas de productos,
-            contenido educativo o entretenimiento, trabajamos contigo para
-            desarrollar una estrategia de contenido personalizada que refleje la
-            esencia de tu marca.
-          </p>
-          <h2>Segmentación para Monetización</h2>
-          <p>
-            Una de las claves para el éxito en YouTube es la segmentación
-            efectiva. Ayudamos a tu empresa a identificar nichos específicos y
-            oportunidades de mercado en YouTube para que puedas obtener los
-            máximos ingresos de publicidad. Esto incluye optimizar los
-            metadatos, etiquetas y palabras clave para aumentar la visibilidad
-            de tus videos.
-          </p>
-          <h2>Maximiza tus Ingresos con YouTube</h2>
-          <p>
-            El programa de socios de YouTube te permite ganar dinero con tus
-            videos. YouTube paga alrededor del 55% de los ingresos generados por
-            la publicidad a los creadores de contenido. Trabajamos contigo para
-            cumplir con los requisitos del programa, como la cantidad de
-            suscriptores y tiempo de visualización, para que puedas empezar a
-            ganar dinero con tu canal
-          </p>
-        </div>
+        <YouTubeInfo/>
+
         <div className="flex flex-wrap -m-4">
           {features.map((feature, index) => (
             <FeatureColumn key={index} {...feature} />

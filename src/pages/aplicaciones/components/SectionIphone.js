@@ -27,7 +27,7 @@ const SectionIphone = () => {
   };
 
   return (
-    <div className="mx-auto flex flex-col items-center sm:text-center min-h-screen border border-red-800">
+    <div className="mx-auto flex flex-col items-center sm:text-center min-h-screen ">
       {renderContentBlock()}
       <div className="flex pt-10 items-end animate-pulse">
         <h1>Haz clic aquí ⬇️</h1>

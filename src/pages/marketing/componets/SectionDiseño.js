@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { gsap } from "gsap";
+import Image from "next/image";
 
 const SectionDiseño = () => {
   const [activeTab, setActiveTab] = useState("Contenido");
@@ -104,10 +105,12 @@ const SectionDiseño = () => {
             )}
            
           </div>
-          <img
+          <Image
             alt="redes"
-            className="featured-image lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded rounded-3xl sm:rounded-full"
+            className="featured-image lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded-3xl"
             src="https://res.cloudinary.com/di1v23yy0/image/upload/v1696923504/redeseditada_xidzxw.png"
+            width={800}
+            height={800}
           />
         </div>
       </div>

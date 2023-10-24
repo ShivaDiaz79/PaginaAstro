@@ -1,13 +1,9 @@
 import Layout from "components/Layout";
-import React from "react";
-import SocialMedia from "./componets/SocialMedia";
 import PriceMarketing from "./componets/PriceMarketing";
 import SectionCampaña from "./componets/SectionCampaña";
 import SectionDiseño from "./componets/SectionDiseño";
 import SectionRedes from "./componets/SectionRedes";
 import CenteredImageWithText from "./componets/CenteredImageWithText";
-import PriceDiseño from "./componets/PriceDiseño";
-import PriceCampaña from "./componets/PriceCampaña";
 import FeatureSection from "./componets/FeactureSection";
 
 const index = () => {
