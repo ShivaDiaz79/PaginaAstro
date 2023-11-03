@@ -1,51 +1,57 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
-import { motion, useCycle } from "framer-motion";
+import { motion, useCycle, useAnimation } from "framer-motion";
 import Laptopmockup from "@/pages/webSite/components/Laptopmockup";
 
-const FontsWe3 = () => {
+const FontsWeb3 = () => {
   const [isFlipped, toggleFlip] = useCycle(false, true);
   const [isRotating, setIsRotating] = useState(false);
+  const controls = useAnimation();
 
   const handleClick = () => {
     setIsRotating(!isRotating);
   };
 
-  useEffect(() => {
-    // Función para rotar cada 5 segundos
-    const rotateEvery5Seconds = setInterval(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 200) {
+      // Cambia el valor de 200 según tu preferencia
+      controls.start({ rotateY: isRotating ? 0 : 180 });
       setIsRotating(!isRotating);
-    }, 5000);
+    }
+  };
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      clearInterval(rotateEvery5Seconds);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [isRotating]);
+  }, [isRotating, controls]);
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center mx-auto">
       <motion.div
-        className="w-full h-full bg-blue-500 rounded-2xl"
+        className="w-full h-full bg-transparent border-purple-400 rounded-2xl"
         style={{
           boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
         }}
-        animate={{
-          rotateY: isRotating ? 180 : 0,
-          y: isFlipped ? 100 : 0,
-        }}
+        animate={controls}
         transition={{
-          duration: 0.5,
+          duration: 3, // Ajusta la duración de la rotación (en segundos)
           type: "spring",
         }}
         onTap={handleClick}
         whileHover={{
-          scale: 1.1,
+          rotateY: 360, // Gira cuando el cursor está sobre el componente
         }}
       >
-        {/* Aquí insertamos el componente Smartwatchmockup en lugar de la imagen */}
-       <Laptopmockup/>
+        <Laptopmockup />
       </motion.div>
     </div>
   );
 };
 
-export default FontsWe3;
+export default FontsWeb3;
+
+
+
+

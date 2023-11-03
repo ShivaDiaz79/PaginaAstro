@@ -23,7 +23,8 @@ module.exports = {
       },
       fontFamily: {
         oswald: ['Oswald', 'sans-serif'], 
-         rubik: ['Rubik', 'sans-serif'],
+        rubik: ['Rubik', 'sans-serif'],
+        varela: ['Varela Round', 'sans-serif'],
 
       },
     },

@@ -1,33 +1,48 @@
 // /* eslint-disable react-hooks/rules-of-hooks */
-// import { initializeApp } from "firebase/app";
-// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-// import firebaseConfig from "firebaseConfig.js"
+
+// import {  createUserWithEmailAndPassword } from "firebase/auth";
+// import { auth } from "firebaseConfig";
 // import { useRouter } from "next/router";
 
+// // const firebaseApp = initializeApp(firebaseConfig);
+//   // Obtiene el servicio de autenticación
+  
 // const Register = () => {
 //   // Inicializa Firebase con la configuración
-//   const firebaseApp = initializeApp(firebaseConfig);
 
-//   // Obtiene el servicio de autenticación
-//   const auth = getAuth(firebaseApp);
 
-//   const handleRegistration = (e) => {
+
+
+//   const handleRegistration = async (e) => {
+
 //     e.preventDefault();
 
 //     const email = e.target.email.value;
 //     const password = e.target.password.value;
 
-//     createUserWithEmailAndPassword(auth, email, password)
-//       .then((userCredential) => {
-//         // Usuario registrado exitosamente, puedes redirigir o realizar acciones adicionales
-//         const router = useRouter();
-//         router.push("/"); // Redirige al usuario a la página de inicio
-//       })
-//       .catch((error) => {
-//         const errorCode = error.code;
-//         const errorMessage = error.message;
-//         // Manejo de errores, puedes mostrar un mensaje de error
-//       });
+//     console.log(email,password);
+
+
+// try {
+//   const esAuth = await createUserWithEmailAndPassword(auth, email, password)
+//   console.log(esAuth, 'esAuth');
+
+// } catch (error) {
+//   console.log(error);
+// }
+
+
+    
+//       // .then((userCredential) => {
+//       //   // Usuario registrado exitosamente, puedes redirigir o realizar acciones adicionales
+//       //   const router = useRouter();
+//       //   router.push("/"); // Redirige al usuario a la página de inicio
+//       // })
+//       // .catch((error) => {
+//       //   const errorCode = error.code;
+//       //   const errorMessage = error.message;
+//       //   // Manejo de errores, puedes mostrar un mensaje de error
+//       // });
 //   };
 
 //   return (

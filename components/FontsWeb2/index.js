@@ -25,7 +25,7 @@ const FontsWeb2 = () => {
   return (
     <div className="flex justify-center items-center">
       <motion.div
-        className="w-full h-full bg-blue-500 rounded-2xl"
+        className="w-full h-full  bg-transparent border-purple-400 rounded-3xl"
         style={{
           boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
         }}

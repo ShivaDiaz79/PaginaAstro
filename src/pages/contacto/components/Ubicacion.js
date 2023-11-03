@@ -17,7 +17,7 @@ const Ubicacion = () => {
 
     // Enviar los datos a Firebase (reemplaza 'URL_DE_TU_API' con la URL de tu API Firebase)
     try {
-      const response = await fetch('https://nextastro-de08d-default-rtdb.firebaseio.com', {
+      const response = await fetch('', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

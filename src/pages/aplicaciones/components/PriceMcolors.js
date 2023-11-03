@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
   <div className={`relative p-6 ${bgClass}`}>
@@ -28,12 +29,13 @@ const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
           </ul>
         )}
       </div>
-      <a
-        href={link}
+      <Link
+        href={`https://wa.me/+59133931210/?text=Hola,%20me%20interesa%20una%20aplicación%20web.`}
         className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"
+        target="_blank"
       >
-        CONTRATAR {price}
-      </a>
+        Contratar {price}
+      </Link>
     </div>
   </div>
 );
@@ -61,7 +63,7 @@ const PriceApps = () => {
         '✔️ Pruebas exhaustivas y resolución de problemas.',
         '✔️ Optimización de rendimiento para una experiencia fluida.',
       ],
-      link: 'https://wicked-templates.gumroad.com/l/wicked-team-tier/40dark',
+      link:'https://wa.me/+59133931210',
       bgClass: 'bg-blue-600 rounded-3xl',
     },
     {
@@ -85,7 +87,7 @@ const PriceApps = () => {
         '✔️ Pruebas exhaustivas y resolución de problemas.',
         '✔️ Optimización de rendimiento para una experiencia fluida.',
       ],
-      link: 'https://wicked-templates.gumroad.com/l/wicked-dev-tier/40dark',
+      link:'https://wa.me/+59133931210',
       bgClass: 'bg-blue-600 rounded-3xl',
     },
     {
@@ -116,7 +118,7 @@ const PriceApps = () => {
         '✔️ Sistema de comentarios o reseñas.',
         '✔️ Integración con sistemas de gestión de contenido (CMS).',
       ],
-      link: 'https://wicked-templates.gumroad.com/l/starter-tier/40dark',
+      link:'https://wa.me/+59133931210',
       bgClass: 'bg-blue-600 rounded-3xl',
     },
   ];

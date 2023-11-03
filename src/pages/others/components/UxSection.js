@@ -18,7 +18,7 @@ const ImageBox = () => (
 // Función para crear el cuadro de información del usuario
 const UserInfoBox = () => (
   <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-    <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+    <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400 mt-4">
       <Image
         width={400}
         height={800}

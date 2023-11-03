@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, useCycle } from "framer-motion";
 import Desktopmockup from "@/pages/webSite/components/Desktopmockup";
 
@@ -10,21 +10,10 @@ const FontsWeb = () => {
     setIsRotating(!isRotating);
   };
 
-  useEffect(() => {
-    // Función para rotar cada 5 segundos
-    const rotateEvery5Seconds = setInterval(() => {
-      setIsRotating(!isRotating);
-    }, 5000);
-
-    return () => {
-      clearInterval(rotateEvery5Seconds);
-    };
-  }, [isRotating]);
-
   return (
     <div className="flex justify-center items-center mx-auto">
       <motion.div
-        className="w-full h-full bg-blue-500 rounded-2xl"
+        className="w-full h-full bg-transparent border-purple-400 rounded-2xl"
         style={{
           boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
         }}
@@ -38,14 +27,15 @@ const FontsWeb = () => {
         }}
         onTap={handleClick}
         whileHover={{
+          rotateY: 180, // Gira cuando el cursor está sobre el componente
           scale: 1.1,
         }}
       >
-        {/* Aquí insertamos el componente Smartwatchmockup en lugar de la imagen */}
-       <Desktopmockup/>
+        <Desktopmockup style={{ width: "100%", height: "100%" }} />
       </motion.div>
     </div>
   );
 };
 
 export default FontsWeb;
+

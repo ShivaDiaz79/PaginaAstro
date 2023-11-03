@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
   <div className={`relative p-6  ${bgClass} h-auto transform hover:scale-110 transition-transform duration-300 ease-in-out`}>
@@ -28,12 +29,13 @@ const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
           </ul>
         )}
       </div>
-      <a
-        href={link}
+      <Link
+        href={`https://wa.me/+59133931210/?text=Hola,%20me%20interesa%20una%20sus%20servicios.`}
         className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"
+        target="_blank"
       >
-        Comprar {price}
-      </a>
+        Contratar {price}
+      </Link>
     </div>
   </div>
 );
@@ -45,20 +47,20 @@ const PriceMarketing = () => {
       discount: '',
       title: 'Plan Basico',
       features: [
-        ' Creación y optimización de perfiles',
-        ' Planificación de contenido (Calendario de publicaciones)',
-        ' Identificación de temas y tipo de contenido',
-        ' Creación de contenido -8 Artes -2 Reels (máx. 10 segundos)',
-        ' Interacción con la audiencia',
-        ' Monitoreo constante',
-        ' Administración y mantenimiento de publicaciones, mensajes y comentarios',
-        ' Sesión de fotos (Max. 6 productos o servicios)',
-        ' Seguimiento y análisis estratégico',
-        ' Uso de herramientas para medir métricas de: Publicaciones, conversaciones y participación de la audiencia',
-        ' Configuración de respuesta automática en Facebook',
-        ' Ajuste de estrategia para mejorar resultados',
-        ' Landing page o catalogo promocionando 20 productos',
-        ' Reporte mensual',
+        '✔️ Creación y optimización de perfiles',
+        '✔️ Planificación de contenido (Calendario de publicaciones)',
+        '✔️ Identificación de temas y tipo de contenido',
+        '✔️ Creación de contenido -8 Artes -2 Reels (máx. 10 segundos)',
+        '✔️ Interacción con la audiencia',
+        '✔️ Monitoreo constante',
+        '✔️ Administración y mantenimiento de publicaciones, mensajes y comentarios',
+        '✔️ Sesión de fotos (Max. 6 productos o servicios)',
+        '✔️ Seguimiento y análisis estratégico',
+        '✔️ Uso de herramientas para medir métricas de: Publicaciones, conversaciones y participación de la audiencia',
+        '✔️ Configuración de respuesta automática en Facebook',
+        '✔️ Ajuste de estrategia para mejorar resultados',
+        '✔️ Landing page o catalogo promocionando 20 productos',
+        '✔️ Reporte mensual',
         '* Manejo de Facebook, Instagram y Tik Tok',
         '*Contrato mínimo de 3 meses',
       ],
@@ -70,27 +72,27 @@ const PriceMarketing = () => {
       discount: '',
       title: 'Plan Plus',
       features: [
-        ' Creación y optimización de perfiles',
-        ' Planificación de contenido (Calendario de publicaciones)',
-        ' Identificación de temas y tipo de contenido',
-        ' Creación de contenido -12 Artes -4 Reels (máx. 10 segundos)',
-        ' Interacción con la audiencia',
-        ' Monitoreo constante',
-        ' Administración y mantenimiento de publicaciones, mensajes y comentarios',
-        ' Sesión de fotos (Max. 8 productos o servicios)',
-        ' Seguimiento y análisis estratégico',
-        ' Uso de herramientas para medir métricas de: Publicaciones, conversaciones y participación de la audiencia',
-        ' Configuración de respuesta automática en Facebook',
-        ' Ajuste de estrategia para mejorar resultados',
-        ' Landing page o catalogo promocionando 35 productos',
-        ' Creación y gestión de campañas publicitarias',
-        ' Segmentación precisa del público objetivo',
-        ' ChatBot en WhatsApp Business con un máximo de 20 preguntas y respuestas (10 respuestas pueden ser con imágenes)',
-        ' Reporte mensual',
+        '✔️ Creación y optimización de perfiles',
+        '✔️ Planificación de contenido (Calendario de publicaciones)',
+        '✔️ Identificación de temas y tipo de contenido',
+        '✔️ Creación de contenido -12 Artes -4 Reels (máx. 10 segundos)',
+        '✔️ Interacción con la audiencia',
+        '✔️ Monitoreo constante',
+        '✔️ Administración y mantenimiento de publicaciones, mensajes y comentarios',
+        '✔️ Sesión de fotos (Max. 8 productos o servicios)',
+        '✔️ Seguimiento y análisis estratégico',
+        '✔️ Uso de herramientas para medir métricas de: Publicaciones, conversaciones y participación de la audiencia',
+        '✔️ Configuración de respuesta automática en Facebook',
+        '✔️ Ajuste de estrategia para mejorar resultados',
+        '✔️ Landing page o catalogo promocionando 35 productos',
+        '✔️ Creación y gestión de campañas publicitarias',
+        '✔️ Segmentación precisa del público objetivo',
+        '✔️ ChatBot en WhatsApp Business con un máximo de 20 preguntas y respuestas (10 respuestas pueden ser con imágenes)',
+        '✔️ Reporte mensual',
         '* Manejo de Facebook, Instagram y Tik Tok',
         '*Contrato mínimo de 6 meses',
       ],
-      link: 'https://wicked-templates.gumroad.com/l/wicked-dev-tier/40dark',
+      link:'https://wa.me/+59133931210',
       bgClass: 'bg-blue-600 rounded-3xl',
     },
     {
@@ -98,33 +100,33 @@ const PriceMarketing = () => {
       discount: '',
       title: 'Plan Personalizado',
       features: [
-        ' Creación y optimización de perfiles',
-        ' Planificación de contenido (Calendario de publicaciones)',
-        ' Identificación de temas y tipo de contenido',
-        ' Creación de contenido -12 Artes -4 Reels (máx. 15 segundos)',
-        ' Interacción con la audiencia',
-        ' Monitoreo constante',
-        ' Administración y mantenimiento de publicaciones, mensajes y comentarios',
-        ' Sesión de fotos (Max. 8 productos o servicios)',
-        ' Seguimiento y análisis estratégico',
-        ' Uso de herramientas para medir métricas de: Publicaciones, conversaciones y participación de la audiencia',
-        ' Configuración de respuesta automática en Facebook',
-        ' Ajuste de estrategia para mejorar resultados',
-        ' 2 Landing page o 2 catalogos promocionando hasta 20 productos',
-        ' Creación y gestión de campañas publicitarias',
-        ' Segmentación precisa del público objetivo',
-        ' ChatBot en WhatsApp Business con un máximo de 20 preguntas y respuestas (10 respuestas pueden ser con imágenes)',
-        ' Reporte mensual',
-        '  Página Web -Hecha con WordPress -Hosting y dominio por 1 año -Diseño UX/UI -Integracion de ChatBot en WhatsApp Business',
-        ' Manteenimiento Web (hasta 5 cambios de imagenes y noticias',
-        ' Reporte mensual',
-        ' Análisis de mercado y competencia',
-        ' Generación de Led',
-        ' Creación de LinkedIn',
+        '✔️ Creación y optimización de perfiles',
+        '✔️ Planificación de contenido (Calendario de publicaciones)',
+        '✔️ Identificación de temas y tipo de contenido',
+        '✔️ Creación de contenido -12 Artes -4 Reels (máx. 15 segundos)',
+        '✔️ Interacción con la audiencia',
+        '✔️ Monitoreo constante',
+        '✔️ Administración y mantenimiento de publicaciones, mensajes y comentarios',
+        '✔️ Sesión de fotos (Max. 8 productos o servicios)',
+        '✔️ Seguimiento y análisis estratégico',
+        '✔️ Uso de herramientas para medir métricas de: Publicaciones, conversaciones y participación de la audiencia',
+        '✔️ Configuración de respuesta automática en Facebook',
+        '✔️ Ajuste de estrategia para mejorar resultados',
+        '✔️ 2 Landing page o 2 catalogos promocionando hasta 20 productos',
+        '✔️ Creación y gestión de campañas publicitarias',
+        '✔️ Segmentación precisa del público objetivo',
+        '✔️ ChatBot en WhatsApp Business con un máximo de 20 preguntas y respuestas (10 respuestas pueden ser con imágenes)',
+        '✔️ Reporte mensual',
+        '✔️ Página Web-Hecha con WordPress -Hosting y dominio por 1 año -Diseño UX/UI -Integracion de ChatBot en WhatsApp Business',
+        '✔️ Manteenimiento Web (hasta 5 cambios de imagenes y noticias',
+        '✔️ Reporte mensual',
+        '✔️ Análisis de mercado y competencia',
+        '✔️ Generación de Led',
+        '✔️ Creación de LinkedIn',
         '* Manejo de Facebook, Instagram y Tik Tok',
         '*Contrato mínimo de 6 meses',
       ],
-      link: 'https://wicked-templates.gumroad.com/l/starter-tier/40dark',
+      link:'https://wa.me/+59133931210',
       bgClass: 'bg-blue-600 rounded-3xl',
     },
   ];

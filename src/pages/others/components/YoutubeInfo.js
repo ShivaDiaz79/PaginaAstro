@@ -54,6 +54,7 @@ const YouTubeInfo = () => {
 
   return (
     <div className=" mb-20">
+      <h1 className=" font-varela font-extrabold text-2xl text-center">Servicios de Estrategia y Crecimiento en YouTube: ¡Haz Despegar tu Canal!</h1>
       {sections.map((section, index) => (
         <SectionTitle key={index} title={section.title} content={section.content} />
       ))}

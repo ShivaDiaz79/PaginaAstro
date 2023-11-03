@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
@@ -28,12 +29,13 @@ const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
           </ul>
         )}
       </div>
-      <a
-        href={link}
+      <Link
+        href={`https://wa.me/+59133931210/?text=Hola,%20me%20interesa%20una%20página%20web.`}
         className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"
+        target="_blank"
       >
         Contratar {price}
-      </a>
+      </Link>
     </div>
   </div>
 );
@@ -41,7 +43,7 @@ const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
 const PriceWeb2 = () => {
   const priceCards = [
     {
-      price: ' a convenir',
+      price: 'consultar',
       discount: '',
       title: 'Plan Personalizado',
       features: [
@@ -49,10 +51,8 @@ const PriceWeb2 = () => {
         'Requisitos',
         '-Página creada con Next.js, Astro.js o React.js',  
         '-Pagina Creada con CMS,',
-        '',
-        '',
       ],
-      link: '',
+      link: "https://wa.me/+59133931210",
       bgClass: 'bg-blue-600 rounded-3xl',
     },
   ];
