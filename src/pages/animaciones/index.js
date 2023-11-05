@@ -3,6 +3,7 @@ import Project from "./components/Project";
 import Cube from "./components/Cube";
 import AnimatedCard from "./components/AnimatedCard";
 import AnimatedVideoComponent from "./components/FlagsSection";
+import ImageFlot from "./components/ImageFlot";
 
 const Animaciones = () => {
   const projects = [
@@ -35,7 +36,7 @@ const Animaciones = () => {
 
   return (
     <Layout>
-      <div className="pt-24 px-3 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
+      <div className="pt-24 px-3 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 min-h-full">
         <AnimatedCard
           title="Eleva tu Presencia con Animaciones Web de Vanguardia"
           description="Entra en el mundo de la excelencia digital con nuestras animaciones web de última generación. Nuestros efectos visuales y transiciones cautivadoras transformarán tu sitio en una experiencia inmersiva única. Impulsa la retención de usuarios y la diferenciación de la competencia. Descubre el potencial ilimitado de tu presencia en línea con nuestras animaciones de élite."
@@ -51,17 +52,12 @@ const Animaciones = () => {
           </div>
         </div>
       </main>
+      
       <div className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
         <Cube />
-        <AnimatedVideoComponent
-          title=" El Poder de las Animaciones en Sitios Web"
-          description="En el competitivo mundo digital de hoy, la primera impresión cuenta más que nunca. Las animaciones en las páginas web no solo son una tendencia estilística, sino una herramienta poderosa para cautivar a los visitantes y aumentar la eficacia de tu sitio. Al integrar animaciones de manera estratégica, puedes transformar una experiencia de navegación estática en una experiencia dinámica e inmersiva.
-
-          Las animaciones no solo hacen que tu sitio web sea visualmente atractivo, sino que también mejoran la usabilidad al guiar a los usuarios de manera intuitiva y proporcionar realimentación instantánea. Desde sutiles transiciones hasta llamativas animaciones de desplazamiento, estas dinámicas características comunican profesionalismo y cuidado en cada clic.
-          
-          ¿El resultado? Visitantes más comprometidos, tiempos de permanencia más largos y tasas de conversión más altas. Descubre cómo las animaciones pueden elevar tu presencia en línea y brindar a tus usuarios una experiencia única y memorable. ¡Haz que tu sitio web cobre vida y destaque en el mundo digital!."
-          videoUrl="https://res.cloudinary.com/di1v23yy0/video/upload/v1693866198/video_bmbknn.webm" // Reemplaza con la URL de tu video
-        />
+      </div>
+      <div className=" h-screen">
+      <ImageFlot/>
       </div>
     </Layout>
   );

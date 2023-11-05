@@ -18,53 +18,40 @@ const AnimatedVideoComponent = ({ title, description, videoUrl }) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0.9, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0.9, x: -50 }}
+      animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 2 }}
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        textAlign: 'center',
-      }}
+      className="flex flex-col md:flex-row" // Utilizamos flex-col en móviles y flex-row en pantallas grandes
     >
-      <h2>{title}</h2>
-      <p className='mx-3'>{description}</p>
-      <motion.div
-        style={{
-          width: '100%',
-          maxWidth: '100%', // Ancho máximo para adaptarse a dispositivos móviles y de escritorio
-          overflow: 'hidden',
-          borderRadius: '10px',
-          paddingTop: '56.25%', // Proporción de aspecto 16:9 para el contenedor del video
-          position: 'relative',
-        }}
-        whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
-      >
-        <video
-          style={{
-            position: 'absolute',
-            top: '0',
-            left: '0',
-            width: '100%',
-            height: '100%',
-          }}
-          src={videoUrl}
-          title="Video"
-          frameBorder="0"
-          allowFullScreen
-          autoPlay
-          muted
-          controls
-          loop
-          ref={videoRef}
-        ></video>
-      </motion.div>
+      <div className="md:w-1/2 p-4">
+        <h2>{title}</h2>
+        <p className='mx-3'>{description}</p>
+      </div>
+      <div className="md:w-1/2">
+        <motion.div
+          className="relative w-full overflow-hidden rounded-lg"
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+        >
+          <video
+            className="w-full h-full" // En pantallas móviles, el ancho es completo, en pantallas grandes, la altura es completa
+            src={videoUrl}
+            title="Video"
+            frameBorder="0"
+            allowFullScreen
+            autoPlay
+            muted
+            controls
+            loop
+            ref={videoRef}
+          ></video>
+        </motion.div>
+      </div>
     </motion.div>
   );
 };
 
 export default AnimatedVideoComponent;
+
 
 
 
