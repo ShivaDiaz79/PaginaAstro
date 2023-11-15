@@ -24,7 +24,7 @@ const SectionDesktop = () => {
 
   return (
     <div className="mx-auto flex flex-col items-center ">
-      <div className="lg:max-w-lg lg:w-full md:w-5/6">
+      <div className="lg:max-w-lg lg:w-full ">
         <FontsWe3 />
       </div>
 
@@ -32,7 +32,7 @@ const SectionDesktop = () => {
         <h1 className="title-font sm:text-4xl text-3xl mb-4 text-center font-medium text-gray-900">
         Servicios de Desarrollo Web en Shopify, WordPress y Wix
         </h1>
-        <p className="sm:px-20">
+        <p className="px-4 sm:px-20">
           Te ofrecemos la creación de un sitio web de alto rendimiento. Nuestros expertos utilizan estas plataformas
           líderes para desarrollar sitios web eficientes, amigables con SEO y
           optimizados para una experiencia de usuario excepcional. Confía en

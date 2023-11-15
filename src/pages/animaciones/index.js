@@ -42,6 +42,9 @@ const Animaciones = () => {
           description="Entra en el mundo de la excelencia digital con nuestras animaciones web de última generación. Nuestros efectos visuales y transiciones cautivadoras transformarán tu sitio en una experiencia inmersiva única. Impulsa la retención de usuarios y la diferenciación de la competencia. Descubre el potencial ilimitado de tu presencia en línea con nuestras animaciones de élite."
         />
       </div>
+      <div className="h-screen">
+      <ImageFlot/>
+      </div>
       <main className="sm:min-h-screen h-96 flex items-center justify-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 sm:pt-20">
         <div className="w-3/4">
           <p className="text-2xl font-bold ">Astro Estudio</p>
@@ -52,12 +55,8 @@ const Animaciones = () => {
           </div>
         </div>
       </main>
-      
       <div className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
         <Cube />
-      </div>
-      <div className=" h-screen">
-      <ImageFlot/>
       </div>
     </Layout>
   );

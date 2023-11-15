@@ -36,13 +36,10 @@ const Index = () => {
         <div className="snap-center">
           <Others />
         </div>
-
-      
       </main>
-      <div className="">
+      <div>
       <FooterMenu/>
     </div>
-     
     </Layout>
   );
 };

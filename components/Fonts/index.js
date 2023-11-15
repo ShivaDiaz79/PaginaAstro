@@ -42,11 +42,6 @@ export default function Fonts() {
 
   return (
     <main className="">
-      {/* <Image
-        src="https://res.cloudinary.com/di1v23yy0/image/upload/v1689032610/imag4_vjn6lq.jpg"
-        fill={true}
-        alt="background"
-      /> */}
       <div className="absolute top-[calc(100vh-350px)] pt-10 sm:pt-16 sm:pb-40">
         <div ref={slider} className="relative whitespace-nowrap">
           <p

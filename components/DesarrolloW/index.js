@@ -19,7 +19,7 @@ function Index() {
         imageElement.src = "website.avif";
       }
     }
-  }, []); // Ejecutar una vez al montar el componente
+  }, []); 
 
   return (
     <Section

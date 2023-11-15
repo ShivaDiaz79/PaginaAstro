@@ -12,8 +12,8 @@ const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
     </div>
     <div className="flex flex-col p-4">
       <div className="py-6">
-        <h2 className="text-5xl font-thin leading-6 text-white">
-          <span className="ml-auto font-extrabold text-white text-center font-rubik">
+        <h2 className="text-5xl  leading-6 text-white">
+          <span className="ml-auto font-extrabold text-white text-center">
             {" "}
             {price}{" "}
           </span>

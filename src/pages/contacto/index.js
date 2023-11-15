@@ -24,7 +24,6 @@ const Contacto = () => {
     <Layout>
       <div className="bg-blue-600">
         <Ubicacion />
-
         {mensajes.length > 0 && (
           <div className="bg-pink-700">
             {mensajes.map((el, index) => {

@@ -43,7 +43,7 @@ const PriceCard = ({ price, discount, title, features, link, bgClass }) => (
 const PriceWeb2 = () => {
   const priceCards = [
     {
-      price: 'consultar',
+      price: 'CONSULTAR',
       discount: '',
       title: 'Plan Personalizado',
       features: [

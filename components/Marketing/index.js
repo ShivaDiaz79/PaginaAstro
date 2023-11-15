@@ -19,7 +19,7 @@ function Index() {
         imageElement.src = "marketing.avif";
       }
     }
-  }, []); // Ejecutar una vez al montar el componente
+  }, []); 
 
   return (
     <Section
@@ -32,15 +32,6 @@ function Index() {
       height={600}
       width={800}
     >
-      <div className="">
-        <a
-          className="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
-          href="#"
-        >
-          Conócenos un poco más
-        </a>
-      </div>
-     
     </Section>
   );
 }

@@ -19,7 +19,7 @@ function Index() {
         imageElement.src = "others.avif";
       }
     }
-  }, []); // Ejecutar una vez al montar el componente
+  }, []); 
 
   return (
     <Section
@@ -33,8 +33,6 @@ function Index() {
       width={800}
       classsName="h-full"
     >
-     
-      
     </Section>
   );
 }

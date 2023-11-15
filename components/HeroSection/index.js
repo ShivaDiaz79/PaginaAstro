@@ -5,7 +5,6 @@ import Section from 'components/Section';
 const Index = () => {
   return (
     <main>
-    
     <Section
       title="Astro Estudio"
       subtitle="Agencia de Marketing y Desarrollo"
@@ -15,10 +14,8 @@ const Index = () => {
       alt="herosection"
       height={900}
       width={1200}
-      >
-      
+      >  
     </Section>
-   
     </main>
   );
 };

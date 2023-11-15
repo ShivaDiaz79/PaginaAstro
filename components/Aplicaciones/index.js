@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
-import Section from 'components/Section';
-
+import React, { useEffect } from "react";
+import Section from "components/Section";
 
 function Index() {
   useEffect(() => {
@@ -20,13 +19,10 @@ function Index() {
         imageElement.src = "aplicaciones.avif";
       }
     }
-  }, []); // Ejecutar una vez al montar el componente
+  }, []); 
 
   return (
     <div className="">
-   
-    
-   
       <Section
         title="Aplicaciones"
         subtitle="Nativas, Hibridas y Constructor de Aplicaciones:"
@@ -37,10 +33,8 @@ function Index() {
         height={600}
         width={800}
       />
-  
     </div>
   );
 }
 
 export default Index;
-

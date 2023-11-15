@@ -36,12 +36,12 @@ const FontsWeb3 = () => {
         }}
         animate={controls}
         transition={{
-          duration: 3, // Ajusta la duración de la rotación (en segundos)
+          duration: 3, 
           type: "spring",
         }}
         onTap={handleClick}
         whileHover={{
-          rotateY: 360, // Gira cuando el cursor está sobre el componente
+          rotateY: 360, 
         }}
       >
         <Laptopmockup />

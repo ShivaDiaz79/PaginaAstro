@@ -14,8 +14,6 @@ const MapBox = ({ lat, lng, zoom }) => {
       }).addTo(map);
 
       const coord = [lat, lng];
-
-      // Crear un icono personalizado con la imagen
       const customIcon = L.icon({
         iconUrl: '/Img/edificio.jpg',
         iconSize: [40, 40], // Tamaño de la imagen del icono
@@ -32,7 +30,7 @@ const MapBox = ({ lat, lng, zoom }) => {
     }
   }, [lat, lng, zoom]);
 
-  return <div id='map' className='h-96  w-68 sm:h-full sm:w-full'></div>;
+  return <div id='map' className='h-96 w-68 sm:h-full sm:w-full'></div>;
 };
 
 export default MapBox;

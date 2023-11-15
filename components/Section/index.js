@@ -54,10 +54,6 @@ const Section = ({ color, title, subtitle, id, showFooterContent, videoSrc, imag
         <header className=''>
         {renderGrid()}
         </header>
-       
-        {/* <footer className="flex flex-col flex-grow justify-end pb-20">
-          {showFooterContent && <FooterMenu />}
-        </footer> */}
      
       </div>
 

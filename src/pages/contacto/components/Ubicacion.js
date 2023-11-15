@@ -15,7 +15,7 @@ const Ubicacion = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Enviar los datos a Firebase (reemplaza 'URL_DE_TU_API' con la URL de tu API Firebase)
+    // Enviar los datos a Firebase)
     try {
       const response = await fetch('', {
         method: 'POST',

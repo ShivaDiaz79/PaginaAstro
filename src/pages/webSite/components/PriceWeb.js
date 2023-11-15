@@ -95,7 +95,7 @@ const PriceWeb = () => {
       bgClass: 'bg-blue-600 rounded-3xl',
     },
     {
-      price: ' a convenir',
+      price: 'CONSULTAR',
       discount: '',
       title: 'Plan Personalizado',
       features: [
@@ -104,9 +104,9 @@ const PriceWeb = () => {
         '✔️ Botón de WhatsApp y respuesta personalizada',
         '✔️ Contacto con mapa y con notificacion en tiempo real',
         '✔️ Integraciones API (Blogs, Noticias Financieras, etc.',
-        '-Pasarela de pago',
-        '-Integraciones con firebase',
-        '-Interconexión con las RRSS',
+        '✔️Pasarela de pago',
+        '✔️Integraciones con firebase',
+        '✔️Interconexión con las RRSS',
         '✔️ Desarrollo nativo',
         '✔️ Diseño receptivo',
         '✔️ Menú plegable',

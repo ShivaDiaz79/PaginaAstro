@@ -32,7 +32,6 @@ const SectionRedes = () => {
       description:
         'Las presentaciones y los documentos son herramientas poderosas de comunicación. Nuestro servicio de diseño se asegura de que cada presentación y documento sea visualmente impactante y profesional. Utilizamos diseño gráfico y tipografía experta para comunicar tu mensaje con claridad y estilo.',
     },
-    // ...otros elementos
   ];
 
   const renderItems = () =>
@@ -51,7 +50,7 @@ const SectionRedes = () => {
       <h1 className="sm:text-2xl text-2xl font-medium title-font text-center text-black mb-4  ">
         {title}
       </h1>
-      <p className="text-base mx-10 text-black bg-slate-400 p-5 rounded-2xl text-justify-between transform hover:scale-110 transition-transform duration-300 ease-in-out">
+      <p className="text-base mx-10 text-black bg-slate-300 p-5 rounded-2xl text-justify-between transform hover:scale-110 transition-transform duration-300 ease-in-out">
         {description}
       </p>
       <div className="flex mt-6 justify-center">

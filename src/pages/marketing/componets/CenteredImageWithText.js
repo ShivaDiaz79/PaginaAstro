@@ -2,6 +2,38 @@ import React, { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
 
+const campaignTitles = [
+  "Lanzamiento de Producto:",
+  "Campañas de Promoción:",
+  "Campañas de Concientización:",
+  "Campañas de Temporada:",
+  "Campañas de Rebranding:",
+];
+
+const campaignDescriptions = [
+  "Creamos campañas de alto impacto para presentar tus nuevos productos al mercado, generando anticipación y entusiasmo entre tu audiencia.",
+  "Diseñamos estrategias promocionales efectivas que aumentan las ventas y fidelizan a los clientes existentes.",
+  "Creamos campañas de concienciación que educan a tu audiencia sobre los beneficios de tus productos o servicios, construyendo una base de clientes leales.",
+  "Diseñamos estrategias estacionales que capitalizan eventos y festividades para impulsar las ventas.",
+  "Si estás relanzando tu marca, te ayudamos a crear una campaña que comunique eficazmente el nuevo enfoque y los valores de tu marca.",
+];
+
+const whyChooseAstroGroupTitles = [
+  "Experiencia en la Industria:",
+  "Creatividad y Estrategia:",
+  "Resultados Comprobados:",
+  "Enfoque Centrado en el Cliente:",
+  "Medición y Optimización:",
+];
+
+const whyChooseAstroGroupDescriptions = [
+  "Con años de experiencia en la gestión de campañas, comprendemos las complejidades de diferentes industrias.",
+  "Nuestro equipo combina creatividad con estrategia, lo que garantiza campañas efectivas y atractivas.",
+  "Nuestra cartera muestra una serie de campañas exitosas que han llevado al éxito a empresas de todos los tamaños.",
+  "Trabajamos en estrecha colaboración contigo para garantizar que tus objetivos comerciales sean nuestra principal prioridad.",
+  "Utilizamos datos y análisis para optimizar constantemente tus campañas y maximizar el retorno de la inversión.",
+];
+
 const CenteredImageWithText = () => {
   const [isFolded, setIsFolded] = useState(false);
 
@@ -24,25 +56,14 @@ const CenteredImageWithText = () => {
         <h2 className="text-2xl text-center font-semibold text-black">
           Tipos de Campañas que Ofrecemos
         </h2>
-        <p className="text-black mt-6 px-3 p-5 bg-slate-400 rounded-lg mx-3 transform hover:scale-110 transition-transform duration-300 ease-in-out">
-        <span className="text-white font-bold ">Lanzamiento de Producto:</span> Creamos campañas de alto impacto para
-          presentar tus nuevos productos al mercado, generando anticipación y
-          entusiasmo entre tu audiencia. <br />
-          <span className="text-white font-bold ">Campañas de Promoción:</span> Diseñamos estrategias promocionales efectivas
-          que aumentan las ventas y fidelizan a los clientes existentes.
-          <br />
-          <span className="text-white font-bold ">Campañas de Concientización:</span> Creamos campañas de concienciación que
-          educan a tu audiencia sobre los beneficios de tus productos o
-          servicios, construyendo una base de clientes leales.
-          <br />
-          <span className="text-white font-bold ">Campañas de Temporada: </span> Diseñamos estrategias estacionales que
-          capitalizan eventos y festividades para impulsar las ventas.
-          <br />
-          <span className="text-white font-bold ">Campañas de Rebranding: </span> Si estás relanzando tu marca, te ayudamos a
-          crear una campaña que comunique eficazmente el nuevo enfoque y los
-          valores de tu marca.
-          <br />
-        </p>
+        <div className="text-black mt-6 px-3 p-5 bg-slate-300 rounded-lg mx-3 transform hover:scale-110 transition-transform duration-300 ease-in-out">
+          {campaignTitles.map((title, index) => (
+            <div key={index}>
+              <h3 className="text-blue-500 font-bold">{title}</h3>
+              <p>{campaignDescriptions[index]}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Columna Central con Imagen */}
@@ -52,7 +73,7 @@ const CenteredImageWithText = () => {
           alt="Imagen en el Centro"
           width={300}
           height={400}
-          className={`w-full h-auto rounded-lg centered-image px-3  ${
+          className={`w-full h-auto rounded-lg centered-image px-3 ${
             isFolded ? "folded" : ""
           }`}
         />
@@ -63,24 +84,14 @@ const CenteredImageWithText = () => {
         <h2 className="text-2xl font-semibold text-gray-800 text-center">
           ¿Por qué elegir Astro Group?
         </h2>
-        <p className="text-black mt-6 px-3 p-5 bg-slate-400 rounded-lg mx-3 transform hover:scale-110 transition-transform duration-300 ease-in-out">
-        <span className="text-white font-bold ">Experiencia en la Industria:</span> Con años de experiencia en la gestión de
-          campañas, comprendemos las complejidades de diferentes industrias.{" "}
-          <br />
-          <span className="text-white font-bold ">Creatividad y Estrategia:</span> Nuestro equipo combina creatividad con
-          estrategia, lo que garantiza campañas efectivas y atractivas.
-          <br />
-          <span className="text-white font-bold ">Resultados Comprobados: </span> Nuestra cartera muestra una serie de campañas
-          exitosas que han llevado al éxito a empresas de todos los tamaños.
-          <br />
-          <span className="text-white font-bold ">Enfoque Centrado en el Cliente: </span> Trabajamos en estrecha colaboración
-          contigo para garantizar que tus objetivos comerciales sean nuestra
-          principal prioridad.
-          <br />
-          <span className="text-white font-bold ">Medición y Optimización:</span>  Utilizamos datos y análisis para optimizar
-          constantemente tus campañas y maximizar el retorno de la inversión
-          <br />
-        </p>
+        <div className="text-black mt-6 px-3 p-5 bg-slate-300 rounded-lg mx-3 transform hover:scale-110 transition-transform duration-300 ease-in-out">
+          {whyChooseAstroGroupTitles.map((title, index) => (
+            <div key={index}>
+              <h3 className="text-blue-500 font-bold">{title}</h3>
+              <p>{whyChooseAstroGroupDescriptions[index]}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

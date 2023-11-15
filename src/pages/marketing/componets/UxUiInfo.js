@@ -76,7 +76,7 @@ const UxUiInfo = () => {
 
       <style jsx>{`
         .info-container {
-          background-color:  #C0C0C0;
+          background-color:  #D3D3D3;
           border-radius: 12px;
           padding: 20px;
           margin-top: 20px;
