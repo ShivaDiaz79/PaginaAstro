@@ -24,6 +24,10 @@ class MyDocument extends Document {
             name="ahrefs-site-verification"
             content="c2733bda84326d9438f697ea0d706f51586d286db7497ae4c7eb72e3e5f1694d"
           />
+          {/* <meta name="facebook-domain-verification" content="qt422m0t6zb6dpz384y5dnpx0o9nhg" /> */}
+          <meta name="description" content="Especialistas en estrategias de marketing digital para impulsar tu negocio. ¡Aumenta tu visibilidad y ventas hoy!" />
+        <meta name="keywords" content="marketing digital, estrategias SEO, campañas publicitarias, análisis de mercado" />
+
         </Head>
         <body>
           {/* Google Tag Manager (noscript) */}

@@ -21,7 +21,7 @@ const ContactWhatsapp = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-4 text-black p-5 rounded-full cursor-pointer z-30">
+    <div  id="click-whatsapp"className="fixed bottom-6 right-4 text-black p-5 rounded-full cursor-pointer z-30">
       {/* Icono de WhatsApp */}
       <svg
         stroke="currentColor"
@@ -42,7 +42,7 @@ const ContactWhatsapp = () => {
       </svg>
 
       {showInput ? (
-        <div className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600  shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] transform duration-300 ease-in-out hover:scale-110  rounded-lg p-4 absolute bottom-16 right-4 bordeer border-pink-700 border-2">
+        <div  className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600  shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] transform duration-300 ease-in-out hover:scale-110  rounded-lg p-4 absolute bottom-16 right-4 bordeer border-pink-700 border-2">
           {/* Logo u otra imagen */}
           <img src="https://res.cloudinary.com/di1v23yy0/image/upload/v1689032614/Isologo-Astro-Black_gysrkc.png" alt="Logo" className="w-20 h-16  mx-auto mb-4 animate-pulse" />
 
@@ -55,7 +55,7 @@ const ContactWhatsapp = () => {
             className="w-40 h-28 p-2 border border-gray-300 rounded bg-focus:outline-none bg-gradient-to-r from-green-300  via-blue-500 to-purple-600 text-black focus:border-indigo-500"
           />
 
-          <button onClick={handleStartChat} className="w-full mt-4 bg-indigo-500 text-black p-2 rounded hover:bg-indigo-600 focus:outline-none">
+          <button onClick={handleStartChat} id="btn-whatsapp"className="w-full mt-4 bg-indigo-500 text-black p-2 rounded hover:bg-indigo-600 focus:outline-none">
             Iniciar Conversación
           </button>
         </div>

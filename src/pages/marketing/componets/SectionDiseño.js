@@ -61,14 +61,14 @@ const SectionDiseño = () => {
   }, []);
 
   return (
-    <section className="text-black body-font overflow-hidden flex flex-col-1 font-oswald">
+    <section className="text-white body-font overflow-hidden flex flex-col-1 font-oswald">
       <div className="px-5 py-24 mx-auto flex flex-col-1">
         <div className="lg:w-5/5 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
             <h2 className="text-sm text-center title-font text-black tracking-widest font-oswald">
               Maximiza tu Presencia en Línea y Conecta con tu Audiencia 
             </h2>
-            <h1 className="text-black text-2xl title-font text-center font-medium mb-4">
+            <h1 className="text-red-800 text-2xl title-font text-center font-medium mb-4">
               Gestión de Redes Sociales: La Diferencia que
               Necesitas
             </h1>
